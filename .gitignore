@@ -1,0 +1,19 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+.DS_Store
+.vscode/
+
+# Dados são externos e não devem ser versionados.
+data/
+
+files/
+artifacts/
+src/log_analytics.egg-info/
+
+# Saídas temporárias de notebooks.
+.ipynb_checkpoints/
+
