@@ -8,7 +8,7 @@ __pycache__/
 .vscode/
 
 # Dados são externos e não devem ser versionados.
-data/
+/data/
 
 files/
 artifacts/
