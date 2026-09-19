@@ -1,0 +1,32 @@
+{
+  "stage": 3,
+  "stage_name": "group_by_analysis_trace_id",
+  "generated_at": "2026-09-15T22:08:23.539463+00:00",
+  "input": {
+    "path": "data/processed/microservices_final/microservices_events_anonymized_traceable.csv",
+    "sha256": "dea2a26bfac49e8a056a0b6cb7fa514dfd96c6bf6fd38f703c36d3c3ddbe7de5"
+  },
+  "results": {
+    "events": 11199871,
+    "traces": 1514380,
+    "source_counts": {
+      "tc_trace_id": 11191517,
+      "traceId_fallback": 8354
+    },
+    "event_count_conserved": true
+  },
+  "outputs": {
+    "trace_index": {
+      "path": "data/processed/microservices_final/microservices_trace_index.csv",
+      "sha256": "f127d33d54cedabe26ce0846065995cfc3db9035ea5ecd74ddb9ab05c3825409",
+      "traces": 1514380
+    }
+  },
+  "checks": {
+    "input_exists": true,
+    "trace_ids_nonempty": true,
+    "event_count_conserved": true,
+    "index_hash_recorded": true
+  },
+  "accepted": true
+}

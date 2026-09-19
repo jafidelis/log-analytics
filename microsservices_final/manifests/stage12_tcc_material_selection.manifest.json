@@ -1,0 +1,43 @@
+{
+  "stage": 12,
+  "stage_name": "select_tcc_material",
+  "generated_at": "2026-09-16T01:29:57.170248+00:00",
+  "inputs": {
+    "report": {
+      "path": "microsservices_final/reports/final_report.json",
+      "sha256": "b8c9fc90e9321973f2877b075f7f990114b90701e46681ddbb53653cc8084e19"
+    },
+    "alerts": {
+      "path": "data/processed/microservices_final/microservices_alerts.csv.gz",
+      "sha256": "12f8ed5bdca2d594a0dee7abea964a1d49ba8e4b1433f036e440391be9f05dc9"
+    },
+    "hypotheses": {
+      "path": "data/processed/microservices_final/microservices_cause_hypotheses.csv",
+      "sha256": "b61ca9eb724ada082299849a4d64dcb4432040a9d57744933956d3bdaebc0d3c"
+    }
+  },
+  "selection": {
+    "metrics": [
+      "traceable_event_coverage",
+      "unknown_rate",
+      "precision",
+      "recall",
+      "F1",
+      "PR-AUC",
+      "alert_levels",
+      "candidate_coverage"
+    ],
+    "examples": 5,
+    "localization_accuracy_excluded": true
+  },
+  "outputs": {
+    "markdown": "microsservices_final/reports/tcc_selected_material.md",
+    "examples_csv": "microsservices_final/reports/tcc_representative_examples.csv",
+    "examples_sha256": "3273b2a4a443dbe367d661d3eea54b899280f9078c0bf65df3fc53d0184f3a57"
+  },
+  "checks": {
+    "examples_nonzero": true,
+    "outputs_created": true
+  },
+  "accepted": true
+}

@@ -16,4 +16,6 @@ src/log_analytics.egg-info/
 
 # Saídas temporárias de notebooks.
 .ipynb_checkpoints/
+# Modelos baixados localmente (não versionar binários)
+artifacts/models/huggingface/
 

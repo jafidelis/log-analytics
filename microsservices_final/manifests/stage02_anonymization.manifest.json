@@ -1,0 +1,27 @@
+{
+  "stage": 2,
+  "stage_name": "anonymize_deterministically",
+  "generated_at": "2026-09-15T21:58:52.813448+00:00",
+  "input_directory": "data/raw/microservices",
+  "policy": {
+    "primary_trace_key": "tc_trace_id",
+    "fallback_trace_key": "traceId",
+    "untraceable_events": "preserved_separately_and_excluded_from_trace_analysis",
+    "anonymization": "deterministic_sha256_tokens_for_sensitive_text"
+  },
+  "results": {
+    "traceable_rows": 11199871,
+    "untraceable_rows": 3605145,
+    "fallback_trace_rows": 8354,
+    "source_counts": {
+      "tc_trace_id": 11191517,
+      "traceId": 8354,
+      "none": 3605145
+    }
+  },
+  "outputs": {
+    "traceable": "data/processed/microservices_final/microservices_events_anonymized_traceable.csv",
+    "untraceable": "data/processed/microservices_final/microservices_events_anonymized_untraceable.csv"
+  },
+  "accepted": true
+}

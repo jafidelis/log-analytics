@@ -1,0 +1,123 @@
+{
+  "report_type": "final_execution_consolidated_report",
+  "generated_at": "2026-09-16T01:22:53.497029+00:00",
+  "scope": "logs originais de microsserviços; rótulos manuais apenas para calibração e avaliação auxiliar",
+  "pipeline_status": "executed_with_auxiliary_evaluation",
+  "data_coverage": {
+    "raw_files": 2,
+    "raw_events": 14805016,
+    "raw_trace_ids": 1506116,
+    "traceable_events": 11199871,
+    "untraceable_events": 3605145,
+    "traceable_event_coverage": 0.7564916512079419,
+    "trace_ids_processed": 1514380
+  },
+  "parsing": {
+    "drain3_version": "0.9.11",
+    "similarity_threshold": 0.6,
+    "fit_events": 3359960,
+    "templates": 5388,
+    "singleton_templates": 2682,
+    "unknown_events": 22089,
+    "unknown_rate": 0.0019722548590068584
+  },
+  "representation": {
+    "type": "sparse_template_counts_plus_structural_features",
+    "template_counts_format": "template_id:count separated by spaces",
+    "unk_template_id": 0,
+    "dense_template_matrix": false
+  },
+  "detection": {
+    "model_candidate": "IsolationForest",
+    "train_traces": 200000,
+    "traces_scored": 1514380,
+    "threshold": 0.6899071967884083,
+    "holdout": {
+      "n": 297,
+      "tp": 40,
+      "tn": 220,
+      "fp": 34,
+      "fn": 3,
+      "precision": 0.5405405405405406,
+      "recall": 0.9302325581395349,
+      "specificity": 0.8661417322834646,
+      "f1": 0.6837606837606837
+    },
+    "pr_auc_reference": 0.5595956051803143,
+    "alert_levels": {
+      "none": 1487403,
+      "review": 18283,
+      "high_confidence": 8694
+    }
+  },
+  "localization": {
+    "alerted_traces": 26977,
+    "traces_with_candidates": 26977,
+    "candidate_rows": 183410,
+    "ranking": "error_count desc, unique_templates desc, events desc, first_event_ordinal asc"
+  },
+  "cause_hypotheses": {
+    "traces_with_hypotheses": 26977,
+    "source_counts": {
+      "first_error_service": 13271,
+      "candidate_service_top1": 13706
+    },
+    "claim": "hypothesis_with_traceable_evidence_not_causal_proof"
+  },
+  "traceability": {
+    "event_to_template": true,
+    "trace_to_service_candidate": true,
+    "hypothesis_to_event_ordinal": true,
+    "raw_events_without_trace_excluded_from_trace_analysis": true
+  },
+  "limitations": [
+    "rótulos manuais não constituem verdade independente e foram usados somente na calibração/avaliação auxiliar",
+    "não há validação causal independente para o serviço ou hipótese",
+    "a localização é ranking de candidato baseado em evidências observáveis",
+    "a avaliação de detecção pode compartilhar sinais com a construção dos rótulos",
+    "os eventos sem identificador de trace foram preservados, mas não entram na análise por trace"
+  ],
+  "source_manifests": {
+    "audit": {
+      "path": "microsservices_final/manifests/stage01_ingest_audit.manifest.json",
+      "sha256": "c07f40538e563f2265b59d62bf0cb6089132d7f695a3e59926aaeb2ec3e82e36"
+    },
+    "anon": {
+      "path": "microsservices_final/manifests/stage02_anonymization.manifest.json",
+      "sha256": "a315a4594981cae7a6defcef82d6947070da3ea584ecc4600507c3c6a650567e"
+    },
+    "group": {
+      "path": "microsservices_final/manifests/stage03_trace_grouping.manifest.json",
+      "sha256": "12d2a1fea401546a5ee40d1af5d7f56e356ae5d7cca8f6c49776dc047fdb39d0"
+    },
+    "drain": {
+      "path": "microsservices_final/manifests/stage04_drain3_fit.manifest.json",
+      "sha256": "2dc56d8bf91e16a5742598adbe8ed4655693f3883da3e1e8d95e1db8a0504628"
+    },
+    "transform": {
+      "path": "microsservices_final/manifests/stage05_drain3_transformation.manifest.json",
+      "sha256": "aa8992023dcfaadf1b033b62f76cc2f09b3593a4b0490b621f8ead6c0ef860e4"
+    },
+    "representation": {
+      "path": "microsservices_final/manifests/stage06_trace_representations.manifest.json",
+      "sha256": "2299f9d040039b3d17133aa2b84a466ad1891273c618b6f9eb6ebf2bafe128f0"
+    },
+    "detection": {
+      "path": "microsservices_final/manifests/stage07_scalable_detection.manifest.json",
+      "sha256": "ad40f96a4178db4d4cdbc8a6106d73995bf04846c7ff7e23916b3449aafa5925"
+    },
+    "alerts": {
+      "path": "microsservices_final/manifests/stage08_alert_calibration.manifest.json",
+      "sha256": "c82161061a206650351aa9ee588d17d3bf2ef766f12b5c4bc282787fa4389081"
+    },
+    "localization": {
+      "path": "microsservices_final/manifests/stage09_service_localization.manifest.json",
+      "sha256": "4199db918dc62bfbb6973616494c5678dd402aa99c58797fa2ef107d63e63039"
+    },
+    "cause": {
+      "path": "microsservices_final/manifests/stage10_cause_hypotheses.manifest.json",
+      "sha256": "8789e2286ebbc6bb5ad67318a7258acbf4367c80aecd31009dd24797d9fdc3cd"
+    }
+  },
+  "accepted": false
+}

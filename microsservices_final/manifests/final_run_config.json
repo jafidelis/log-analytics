@@ -1,0 +1,46 @@
+{
+  "status": "executed_with_trace_coverage_exception",
+  "executed_at": "2026-09-16T01:20:00-03:00",
+  "project": "microservices_anomaly_root_cause_framework",
+  "input": {
+    "raw_logs": "/Users/jafidelis/Work/estudo/log-analytics/data/raw/microservices",
+    "manual_labels": "/Users/jafidelis/Work/estudo/log-analytics/data/processed/microservices_sample/microservices_trace_manual_labels.csv",
+    "manual_label_count": 1000,
+    "manual_label_usage": "calibration_and_auxiliary_evaluation_only"
+  },
+  "pipeline": [
+    "01_ingest_and_audit",
+    "02_anonymize_deterministically",
+    "03_group_by_tc_trace_id",
+    "04_fit_and_freeze_drain3",
+    "05_build_trace_representations",
+    "06_detect_anomalies",
+    "07_localize_candidate_service",
+    "08_generate_cause_hypotheses",
+    "09_evaluate_and_report"
+  ],
+  "frozen_decisions": {
+    "trace_key": "tc_trace_id",
+    "threshold_candidate": 0.6713793902714876,
+    "high_confidence_rule": "anomaly_score >= threshold AND has_stack_trace",
+    "uncertain_label_policy": "exclude_from_binary_metrics",
+    "root_cause_claim": "hypothesis_with_evidence_not_proof"
+  },
+  "outputs": {
+    "manifests": "manifests",
+    "reports": "reports",
+    "tables": "tables",
+    "figures": "figures"
+  },
+  "closure_requirements": [
+    "input_sha256_recorded",
+    "anonymization_manifest_accepted",
+    "trace_grouping_validated",
+    "drain3_state_checksum_recorded",
+    "representations_and_features_validated",
+    "detector_metrics_reported",
+    "localization_top1_top3_reported_when_reference_exists",
+    "cause_hypotheses_traceable",
+    "limitations_reported"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "stage": 4,
+  "stage_name": "fit_and_freeze_drain3",
+  "generated_at": "2026-09-15T23:07:30.550714+00:00",
+  "input": {
+    "path": "data/processed/microservices_final/microservices_events_anonymized_traceable.csv",
+    "sha256": "dea2a26bfac49e8a056a0b6cb7fa514dfd96c6bf6fd38f703c36d3c3ddbe7de5"
+  },
+  "fit_policy": {
+    "events_requested": 3359961,
+    "events_scanned": 3359962,
+    "fit_events": 3359960,
+    "selection": "first temporal window; no labels used"
+  },
+  "drain3": {
+    "version": "0.9.11",
+    "depth": 4,
+    "similarity_threshold": 0.8,
+    "state_frozen": true,
+    "preparer": "whitespace + UUID + numeric normalization"
+  },
+  "results": {
+    "templates": 76675,
+    "singleton_templates": 69138
+  },
+  "outputs": {
+    "state": {
+      "path": "data/processed/microservices_final/microservices_drain3_state.bin",
+      "sha256": "cc773844293fb2764bb35756d5a548fac48cf4eb3c2c61e89e88ef3c574f4554"
+    },
+    "templates": {
+      "path": "data/processed/microservices_final/microservices_drain3_templates.csv",
+      "sha256": "69cd9f1b7cdb73cca9a01370c02cb9b44a465150fbaa56e69fed962f51bccf26"
+    }
+  },
+  "checks": {
+    "fit_events_nonzero": true,
+    "templates_nonzero": true,
+    "state_hash_recorded": true,
+    "templates_hash_recorded": true
+  },
+  "accepted": true
+}

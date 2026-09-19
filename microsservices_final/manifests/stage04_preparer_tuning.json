@@ -1,0 +1,298 @@
+{
+  "stage": "4_tuning",
+  "stage_name": "compare_drain3_preparers",
+  "generated_at": "2026-09-15T23:24:29.676688+00:00",
+  "input": "data/processed/microservices_final/microservices_events_anonymized_traceable.csv",
+  "events_read": 250000,
+  "variants": {
+    "current": {
+      "templates": 7708,
+      "singletons": 5929,
+      "singleton_rate": 0.7692008303061754,
+      "max_template_count": 40001,
+      "top_templates": [
+        {
+          "fit_count": 40001,
+          "template": "Iniciando <*> com a Feature Toggle 'featureToggle.entityRelationshipResolver.enabled: true'"
+        },
+        {
+          "fit_count": 10445,
+          "template": "Took: <NUM> ms for <*> <NUM> <*> with JdbcBatchSize: <NUM>"
+        },
+        {
+          "fit_count": 7359,
+          "template": "Atualizando monitor da execução da tarefa '<UUID>'. Recebeu resposta da execução da tarefa."
+        },
+        {
+          "fit_count": 7203,
+          "template": "Atualizando resposta execução de tarefa '<UUID>'"
+        },
+        {
+          "fit_count": 7178,
+          "template": "Cliente: <*> <NUM> codigos de barras localizados no cache, <NUM> localizados no gestao e <NUM> nao localizados"
+        },
+        {
+          "fit_count": 7033,
+          "template": "Iniciando processamento da respota da execução de tarefa '<UUID>'"
+        },
+        {
+          "fit_count": 6576,
+          "template": "Will updateInBulk: <NUM> <*> with JdbcBatchSize: <NUM>"
+        },
+        {
+          "fit_count": 6235,
+          "template": "Salvou contexto do SAGA: 'Saga de <*> de <*> id: '<UUID>', correlationId: '<UUID>', SAGA status: <*> passo: '<NUM>'."
+        },
+        {
+          "fit_count": 5748,
+          "template": "Force: false. Tenant <*> - Carga inicial da entidade <*> ABORTADO! Processo já finalizado em <*>"
+        },
+        {
+          "fit_count": 5736,
+          "template": "Force: false. Tenant <*> - Carga inicial da entidade <*> Iniciando..."
+        }
+      ]
+    },
+    "temporal": {
+      "templates": 7284,
+      "singletons": 5561,
+      "singleton_rate": 0.763454146073586,
+      "max_template_count": 40001,
+      "top_templates": [
+        {
+          "fit_count": 40001,
+          "template": "Iniciando <*> com a Feature Toggle 'featureToggle.entityRelationshipResolver.enabled: true'"
+        },
+        {
+          "fit_count": 10445,
+          "template": "Took: <NUM> ms for <*> <NUM> <*> with JdbcBatchSize: <NUM>"
+        },
+        {
+          "fit_count": 7359,
+          "template": "Atualizando monitor da execução da tarefa '<UUID>'. Recebeu resposta da execução da tarefa."
+        },
+        {
+          "fit_count": 7203,
+          "template": "Atualizando resposta execução de tarefa '<UUID>'"
+        },
+        {
+          "fit_count": 7178,
+          "template": "Cliente: <*> <NUM> codigos de barras localizados no cache, <NUM> localizados no gestao e <NUM> nao localizados"
+        },
+        {
+          "fit_count": 7033,
+          "template": "Iniciando processamento da respota da execução de tarefa '<UUID>'"
+        },
+        {
+          "fit_count": 6576,
+          "template": "Will updateInBulk: <NUM> <*> with JdbcBatchSize: <NUM>"
+        },
+        {
+          "fit_count": 6235,
+          "template": "Salvou contexto do SAGA: 'Saga de <*> de <*> id: '<UUID>', correlationId: '<UUID>', SAGA status: <*> passo: '<NUM>'."
+        },
+        {
+          "fit_count": 5748,
+          "template": "Force: false. Tenant <*> - Carga inicial da entidade <*> ABORTADO! Processo já finalizado em <TIMESTAMP>"
+        },
+        {
+          "fit_count": 5736,
+          "template": "Force: false. Tenant <*> - Carga inicial da entidade <*> Iniciando..."
+        }
+      ]
+    },
+    "aggressive": {
+      "templates": 7077,
+      "singletons": 5513,
+      "singleton_rate": 0.7790024021478027,
+      "max_template_count": 40001,
+      "top_templates": [
+        {
+          "fit_count": 40001,
+          "template": "Iniciando <*> com a Feature Toggle 'featureToggle.entityRelationshipResolver.enabled: true'"
+        },
+        {
+          "fit_count": 10445,
+          "template": "Took: <NUM> ms for <*> <NUM> <*> with JdbcBatchSize: <NUM>"
+        },
+        {
+          "fit_count": 7359,
+          "template": "Atualizando monitor da execução da tarefa '<UUID>'. Recebeu resposta da execução da tarefa."
+        },
+        {
+          "fit_count": 7203,
+          "template": "Atualizando resposta execução de tarefa '<UUID>'"
+        },
+        {
+          "fit_count": 7178,
+          "template": "Cliente: <*> <NUM> codigos de barras localizados no cache, <NUM> localizados no gestao e <NUM> nao localizados"
+        },
+        {
+          "fit_count": 7033,
+          "template": "Iniciando processamento da respota da execução de tarefa '<UUID>'"
+        },
+        {
+          "fit_count": 6576,
+          "template": "Will updateInBulk: <NUM> <*> with JdbcBatchSize: <NUM>"
+        },
+        {
+          "fit_count": 6235,
+          "template": "Salvou contexto do SAGA: 'Saga de <*> de <*> id: '<UUID>', correlationId: '<UUID>', SAGA status: <*> passo: '<NUM>'."
+        },
+        {
+          "fit_count": 5809,
+          "template": "Persistindo histórico de acesso para o evento 'EventAuditingPayload(tenant=<VALUE>, <*> empresa=<VALUE>, <*> <*> date=<TIMESTAMP>, eventToken=null, eventDescription=null)'"
+        },
+        {
+          "fit_count": 5748,
+          "template": "Force: false. Tenant <*> - Carga inicial da entidade <*> ABORTADO! Processo já finalizado em <TIMESTAMP>"
+        }
+      ]
+    },
+    "temporal_sim_0.6": {
+      "templates": 1581,
+      "singletons": 604,
+      "singleton_rate": 0.3820366856419987,
+      "max_template_count": 40001,
+      "top_templates": [
+        {
+          "fit_count": 40001,
+          "template": "Iniciando <*> com a Feature Toggle 'featureToggle.entityRelationshipResolver.enabled: true'"
+        },
+        {
+          "fit_count": 10474,
+          "template": "Will <*> <NUM> <*> with JdbcBatchSize: <NUM>"
+        },
+        {
+          "fit_count": 10445,
+          "template": "Took: <NUM> ms for <*> <NUM> <*> with JdbcBatchSize: <NUM>"
+        },
+        {
+          "fit_count": 7359,
+          "template": "Atualizando monitor da execução da tarefa '<UUID>'. Recebeu resposta da execução da tarefa."
+        },
+        {
+          "fit_count": 7203,
+          "template": "Atualizando resposta execução de tarefa '<UUID>'"
+        },
+        {
+          "fit_count": 7178,
+          "template": "Cliente: <*> <NUM> codigos de barras localizados no cache, <NUM> localizados no gestao e <NUM> nao localizados"
+        },
+        {
+          "fit_count": 7033,
+          "template": "Iniciando processamento da respota da execução de tarefa '<UUID>'"
+        },
+        {
+          "fit_count": 7024,
+          "template": "Message received from scheduler queue: <*> MessageProperties <*> X-MessageId-Header=<UUID>, X-Hops-Count-Header=<NUM>, <*> X-TerminalId-Header=null, X-TraceCallStack-Header=(scheduler@triercloudadmin):platform-scheduler/(ctx-p:null, <*> X-Abrangencia-Empresa-Enabled-Header=true, X-Access-Token=null,"
+        },
+        {
+          "fit_count": 6991,
+          "template": "[initExternalMigrations] - External migration for <*> <*> <*> <*> true."
+        },
+        {
+          "fit_count": 6238,
+          "template": "Salvou contexto do SAGA: <*> <*> <*> <*> <*> id: '<UUID>', correlationId: '<UUID>', SAGA status: <*> passo: '<NUM>'."
+        }
+      ]
+    },
+    "temporal_sim_0.7": {
+      "templates": 5312,
+      "singletons": 4012,
+      "singleton_rate": 0.7552710843373494,
+      "max_template_count": 40001,
+      "top_templates": [
+        {
+          "fit_count": 40001,
+          "template": "Iniciando <*> com a Feature Toggle 'featureToggle.entityRelationshipResolver.enabled: true'"
+        },
+        {
+          "fit_count": 10474,
+          "template": "Will <*> <NUM> <*> with JdbcBatchSize: <NUM>"
+        },
+        {
+          "fit_count": 10445,
+          "template": "Took: <NUM> ms for <*> <NUM> <*> with JdbcBatchSize: <NUM>"
+        },
+        {
+          "fit_count": 7359,
+          "template": "Atualizando monitor da execução da tarefa '<UUID>'. Recebeu resposta da execução da tarefa."
+        },
+        {
+          "fit_count": 7203,
+          "template": "Atualizando resposta execução de tarefa '<UUID>'"
+        },
+        {
+          "fit_count": 7178,
+          "template": "Cliente: <*> <NUM> codigos de barras localizados no cache, <NUM> localizados no gestao e <NUM> nao localizados"
+        },
+        {
+          "fit_count": 7033,
+          "template": "Iniciando processamento da respota da execução de tarefa '<UUID>'"
+        },
+        {
+          "fit_count": 7024,
+          "template": "Message received from scheduler queue: <*> MessageProperties <*> X-MessageId-Header=<UUID>, X-Hops-Count-Header=<NUM>, <*> X-TerminalId-Header=null, X-TraceCallStack-Header=(scheduler@triercloudadmin):platform-scheduler/(ctx-p:null, <*> X-Abrangencia-Empresa-Enabled-Header=true, X-Access-Token=null,"
+        },
+        {
+          "fit_count": 6235,
+          "template": "Salvou contexto do SAGA: 'Saga de <*> de <*> id: '<UUID>', correlationId: '<UUID>', SAGA status: <*> passo: '<NUM>'."
+        },
+        {
+          "fit_count": 5809,
+          "template": "Persistindo histórico de acesso para o evento <*> <*> empresa=<UUID>, <*> <*> date=<TIMESTAMP>, eventToken=null, eventDescription=null)'"
+        }
+      ]
+    },
+    "temporal_sim_0.8": {
+      "templates": 7284,
+      "singletons": 5561,
+      "singleton_rate": 0.763454146073586,
+      "max_template_count": 40001,
+      "top_templates": [
+        {
+          "fit_count": 40001,
+          "template": "Iniciando <*> com a Feature Toggle 'featureToggle.entityRelationshipResolver.enabled: true'"
+        },
+        {
+          "fit_count": 10445,
+          "template": "Took: <NUM> ms for <*> <NUM> <*> with JdbcBatchSize: <NUM>"
+        },
+        {
+          "fit_count": 7359,
+          "template": "Atualizando monitor da execução da tarefa '<UUID>'. Recebeu resposta da execução da tarefa."
+        },
+        {
+          "fit_count": 7203,
+          "template": "Atualizando resposta execução de tarefa '<UUID>'"
+        },
+        {
+          "fit_count": 7178,
+          "template": "Cliente: <*> <NUM> codigos de barras localizados no cache, <NUM> localizados no gestao e <NUM> nao localizados"
+        },
+        {
+          "fit_count": 7033,
+          "template": "Iniciando processamento da respota da execução de tarefa '<UUID>'"
+        },
+        {
+          "fit_count": 6576,
+          "template": "Will updateInBulk: <NUM> <*> with JdbcBatchSize: <NUM>"
+        },
+        {
+          "fit_count": 6235,
+          "template": "Salvou contexto do SAGA: 'Saga de <*> de <*> id: '<UUID>', correlationId: '<UUID>', SAGA status: <*> passo: '<NUM>'."
+        },
+        {
+          "fit_count": 5748,
+          "template": "Force: false. Tenant <*> - Carga inicial da entidade <*> ABORTADO! Processo já finalizado em <TIMESTAMP>"
+        },
+        {
+          "fit_count": 5736,
+          "template": "Force: false. Tenant <*> - Carga inicial da entidade <*> Iniciando..."
+        }
+      ]
+    }
+  },
+  "decision": "select_by_lower_fragmentation_while_preserving_distinct_message_families"
+}

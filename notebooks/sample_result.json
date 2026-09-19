@@ -1,0 +1,8 @@
+{
+    "percent_sample": 0.01,
+    "percent_sample_rows": 148050,
+    "percent_sample_distinct_tc_trace_id": 15061,
+    "percent_sample_tc_trace_id_with_at_least_one_ERROR": 2402,
+    "percent_sample_tc_trace_id_with_at_least_one_WARN": 3235,
+    "percent_sample_tc_trace_id_with_only_INFO": 11031
+}

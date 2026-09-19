@@ -1,0 +1,76 @@
+{
+  "stage": 1,
+  "stage_name": "ingest_and_audit",
+  "generated_at": "2026-09-15T21:12:41.172565+00:00",
+  "input_directory": "data/raw/microservices",
+  "files": [
+    {
+      "path": "data/raw/microservices/triercloud_prod_services_2026-09-11T15-00-00Z_a_2026-09-11T16-00-00Z/triercloud_prod_services_2026-09-11T14-00-00Z_a_2026-09-11T15-00-00Z.csv",
+      "sha256": "9d1fa55552a456ea6f5a92d044c9dcc73d6d376d7496e971152ae4c013ceb612",
+      "size_bytes": 11755600607,
+      "rows": 7808190,
+      "distinct_trace_ids": 772289,
+      "rows_without_trace_id": 1870082,
+      "rows_without_tc_trace_id_with_traceId": 4165,
+      "distinct_traceId_fallback_values": 4122
+    },
+    {
+      "path": "data/raw/microservices/triercloud_prod_services_2026-09-11T15-00-00Z_a_2026-09-11T16-00-00Z/triercloud_prod_services_2026-09-11T15-00-00Z_a_2026-09-11T16-00-00Z.csv",
+      "sha256": "b8bf8b85f9c9dbd123c187857773cd6ed9ae84b8c9cff4ae1adc518b4f760c7f",
+      "size_bytes": 10241414207,
+      "rows": 6996826,
+      "distinct_trace_ids": 734068,
+      "rows_without_trace_id": 1743417,
+      "rows_without_tc_trace_id_with_traceId": 4189,
+      "distinct_traceId_fallback_values": 4142
+    }
+  ],
+  "schema": [
+    "@timestamp",
+    "@version",
+    "level",
+    "level_value",
+    "logger_name",
+    "message",
+    "stack_trace",
+    "tc_app_name",
+    "tc_domain",
+    "tc_empresa",
+    "tc_instance",
+    "tc_primitive",
+    "tc_profiles",
+    "tc_service",
+    "tc_service_canary",
+    "tc_tenant",
+    "tc_tenant_canary",
+    "tc_terminal_id",
+    "tc_trace_call_stack",
+    "tc_trace_id",
+    "tc_uri_host",
+    "tc_uri_method",
+    "tc_uri_path",
+    "tc_uri_url",
+    "tc_user",
+    "tc_version",
+    "thread_name",
+    "traceId"
+  ],
+  "results": {
+    "files": 2,
+    "rows": 14805016,
+    "distinct_trace_ids": 1506116,
+    "rows_without_trace_id": 3613499,
+    "rows_without_tc_trace_id_with_traceId": 8354,
+    "rows_without_any_trace_identifier": 3605145
+  },
+  "checks": {
+    "input_files_found": true,
+    "schema_present": true,
+    "tc_trace_id_present": true,
+    "rows_nonzero": true,
+    "trace_ids_nonempty": false,
+    "fallback_trace_id_profiled": true,
+    "file_hashes_recorded": true
+  },
+  "accepted": false
+}

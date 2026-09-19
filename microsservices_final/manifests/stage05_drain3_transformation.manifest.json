@@ -1,0 +1,33 @@
+{
+  "stage": 5,
+  "stage_name": "transform_with_frozen_drain3",
+  "generated_at": "2026-09-16T00:46:50.133562+00:00",
+  "inputs": {
+    "events": {
+      "path": "data/processed/microservices_final/microservices_events_anonymized_traceable.csv",
+      "sha256": "dea2a26bfac49e8a056a0b6cb7fa514dfd96c6bf6fd38f703c36d3c3ddbe7de5"
+    },
+    "state": {
+      "path": "data/processed/microservices_final/microservices_drain3_state.bin",
+      "sha256": "7dac12107fe1ffac513461e391cde87016cd19e5c4303066ce22d165e3a5f14b"
+    }
+  },
+  "results": {
+    "events": 11199871,
+    "matched": 11177782,
+    "unknown": 22089,
+    "unknown_rate": 0.0019722548590068584,
+    "state_changed_during_match": false
+  },
+  "output": {
+    "path": "data/processed/microservices_final/microservices_events_drain3_assignments.csv.gz",
+    "sha256": "1d42145d47a62a692d74909ca4522174fe8d04bce9b864184380d1492e945cdc"
+  },
+  "checks": {
+    "events_nonzero": true,
+    "event_counts_conserved": true,
+    "state_exists": true,
+    "output_hash_recorded": true
+  },
+  "accepted": true
+}

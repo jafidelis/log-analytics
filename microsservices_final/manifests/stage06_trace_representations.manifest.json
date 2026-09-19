@@ -1,0 +1,37 @@
+{
+  "stage": 6,
+  "stage_name": "build_sparse_trace_representations",
+  "generated_at": "2026-09-16T00:56:19.314696+00:00",
+  "inputs": {
+    "assignments": {
+      "path": "data/processed/microservices_final/microservices_events_drain3_assignments.csv.gz",
+      "sha256": "1d42145d47a62a692d74909ca4522174fe8d04bce9b864184380d1492e945cdc"
+    },
+    "trace_index": {
+      "path": "data/processed/microservices_final/microservices_trace_index.csv",
+      "sha256": "f127d33d54cedabe26ce0846065995cfc3db9035ea5ecd74ddb9ab05c3825409"
+    }
+  },
+  "representation": {
+    "type": "sparse_template_counts_plus_structural_features",
+    "template_counts_format": "template_id:count separated by spaces",
+    "unk_template_id": 0,
+    "dense_template_matrix": false
+  },
+  "results": {
+    "assignment_events": 11199871,
+    "traces": 1514380,
+    "traces_joined_to_index": 1514380
+  },
+  "output": {
+    "path": "data/processed/microservices_final/microservices_trace_representations.csv.gz",
+    "sha256": "a178a90084e63bb7390f507cadb487d9f03986691c472fea2d4aad473e395425"
+  },
+  "checks": {
+    "events_nonzero": true,
+    "traces_nonzero": true,
+    "trace_index_join_complete": true,
+    "output_hash_recorded": true
+  },
+  "accepted": true
+}

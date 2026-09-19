@@ -1,0 +1,48 @@
+{
+  "stage": 10,
+  "stage_name": "generate_cause_hypotheses",
+  "generated_at": "2026-09-16T01:18:47.035410+00:00",
+  "inputs": {
+    "alerts": {
+      "path": "data/processed/microservices_final/microservices_alerts.csv.gz",
+      "sha256": "12f8ed5bdca2d594a0dee7abea964a1d49ba8e4b1433f036e440391be9f05dc9"
+    },
+    "candidates": {
+      "path": "data/processed/microservices_final/microservices_service_candidates.csv",
+      "sha256": "e7b93b919d21f50d8681a308b2a24c5d26cfbbe48342efb44248217973cde6e7"
+    },
+    "events": {
+      "path": "data/processed/microservices_final/microservices_events_anonymized_traceable.csv",
+      "sha256": "dea2a26bfac49e8a056a0b6cb7fa514dfd96c6bf6fd38f703c36d3c3ddbe7de5"
+    }
+  },
+  "policy": {
+    "priority": [
+      "explicit_logical_component",
+      "first_error_service",
+      "candidate_service_top1",
+      "entry_service"
+    ],
+    "claim": "hypothesis_with_traceable_evidence_not_causal_proof"
+  },
+  "results": {
+    "events_scanned": 11199871,
+    "traces_alerted": 26977,
+    "traces_with_evidence": 26977,
+    "hypothesis_source_counts": {
+      "first_error_service": 13271,
+      "candidate_service_top1": 13706
+    },
+    "rows": 26977
+  },
+  "output": {
+    "path": "data/processed/microservices_final/microservices_cause_hypotheses.csv",
+    "sha256": "b61ca9eb724ada082299849a4d64dcb4432040a9d57744933956d3bdaebc0d3c"
+  },
+  "checks": {
+    "traces_nonzero": true,
+    "one_row_per_alerted_trace": true,
+    "output_hash_recorded": true
+  },
+  "accepted": true
+}

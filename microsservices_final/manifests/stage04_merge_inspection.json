@@ -1,0 +1,1890 @@
+{
+  "stage": "4_tuning",
+  "stage_name": "inspect_drain3_merge_coherence",
+  "generated_at": "2026-09-15T23:28:27.279501+00:00",
+  "events_read": 250000,
+  "similarity_threshold": 0.6,
+  "preparer": "temporal",
+  "results": {
+    "templates": 1581,
+    "templates_with_multiple_services": 140,
+    "templates_with_multiple_levels": 0
+  },
+  "high_frequency_candidates": [
+    {
+      "template_id": 4,
+      "fit_count": 40001,
+      "wildcards": 1,
+      "distinct_services": [
+        "caixabalcao",
+        "comissao",
+        "contasreceber",
+        "dashboard",
+        "desktop",
+        "entrada",
+        "estoque",
+        "gestaocontrolados",
+        "pedido",
+        "produto",
+        "setup",
+        "venda"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Iniciando ProdutoRelationshipResolverImpl com a Feature Toggle 'featureToggle.entityRelationshipResolver.enabled: true'",
+        "Iniciando ProdutoRelationshipResolverImpl com a Feature Toggle 'featureToggle.entityRelationshipResolver.enabled: true'",
+        "Iniciando ProdutoRelationshipResolverImpl com a Feature Toggle 'featureToggle.entityRelationshipResolver.enabled: true'"
+      ],
+      "template": "Iniciando <*> com a Feature Toggle 'featureToggle.entityRelationshipResolver.enabled: true'"
+    },
+    {
+      "template_id": 3,
+      "fit_count": 10474,
+      "wildcards": 4,
+      "distinct_services": [
+        "caixabalcao",
+        "cliente",
+        "comissao",
+        "contasreceber",
+        "dashboard",
+        "desktop",
+        "entrada",
+        "estoque",
+        "gestao",
+        "gestaofinanceira",
+        "licenca",
+        "pedido",
+        "produto",
+        "saga",
+        "security",
+        "venda"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Will updateInBulk: <NUM> SagaPropertyEntity with JdbcBatchSize: <NUM>",
+        "Will updateInBulk: <NUM> SagaPropertyEntity with JdbcBatchSize: <NUM>",
+        "Will updateInBulk: <NUM> SagaPropertyEntity with JdbcBatchSize: <NUM>"
+      ],
+      "template": "Will <*> <NUM> <*> with JdbcBatchSize: <NUM>"
+    },
+    {
+      "template_id": 2,
+      "fit_count": 10445,
+      "wildcards": 5,
+      "distinct_services": [
+        "caixabalcao",
+        "cliente",
+        "comissao",
+        "contasreceber",
+        "dashboard",
+        "desktop",
+        "entrada",
+        "estoque",
+        "gestao",
+        "gestaofinanceira",
+        "licenca",
+        "pedido",
+        "produto",
+        "saga",
+        "security",
+        "venda"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Took: <NUM> ms for updateInBulk: <NUM> SagaPropertyEntity with JdbcBatchSize: <NUM>",
+        "Took: <NUM> ms for updateInBulk: <NUM> SagaPropertyEntity with JdbcBatchSize: <NUM>",
+        "Took: <NUM> ms for updateInBulk: <NUM> SagaPropertyEntity with JdbcBatchSize: <NUM>"
+      ],
+      "template": "Took: <NUM> ms for <*> <NUM> <*> with JdbcBatchSize: <NUM>"
+    },
+    {
+      "template_id": 278,
+      "fit_count": 7359,
+      "wildcards": 1,
+      "distinct_services": [
+        "scheduler"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Atualizando monitor da execução da tarefa '<UUID>'. Recebeu resposta da execução da tarefa.",
+        "Atualizando monitor da execução da tarefa '<UUID>'. Recebeu resposta da execução da tarefa.",
+        "Atualizando monitor da execução da tarefa '<UUID>'. Recebeu resposta da execução da tarefa."
+      ],
+      "template": "Atualizando monitor da execução da tarefa '<UUID>'. Recebeu resposta da execução da tarefa."
+    },
+    {
+      "template_id": 277,
+      "fit_count": 7203,
+      "wildcards": 1,
+      "distinct_services": [
+        "scheduler"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Atualizando resposta execução de tarefa '<UUID>'",
+        "Atualizando resposta execução de tarefa '<UUID>'",
+        "Atualizando resposta execução de tarefa '<UUID>'"
+      ],
+      "template": "Atualizando resposta execução de tarefa '<UUID>'"
+    },
+    {
+      "template_id": 34,
+      "fit_count": 7178,
+      "wildcards": 4,
+      "distinct_services": [
+        "sincronizacao"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Cliente: <NUM>/<HEX_4d9a9e3<NUM>8e7<NUM>3d4<NUM>6d>. <NUM> codigos de barras localizados no cache, <NUM> localizados no gestao e <NUM> nao localizados",
+        "Cliente: <NUM>/<HEX_<NUM>7c76d9<NUM>4cc0dbfb7e8>. <NUM> codigos de barras localizados no cache, <NUM> localizados no gestao e <NUM> nao localizados",
+        "Cliente: <NUM>/<HEX_de6f0b3<NUM>0afb1<NUM>5a3e3>. <NUM> codigos de barras localizados no cache, <NUM> localizados no gestao e <NUM> nao localizados"
+      ],
+      "template": "Cliente: <*> <NUM> codigos de barras localizados no cache, <NUM> localizados no gestao e <NUM> nao localizados"
+    },
+    {
+      "template_id": 280,
+      "fit_count": 7033,
+      "wildcards": 1,
+      "distinct_services": [
+        "scheduler"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Iniciando processamento da respota da execução de tarefa '<UUID>'",
+        "Iniciando processamento da respota da execução de tarefa '<UUID>'",
+        "Iniciando processamento da respota da execução de tarefa '<UUID>'"
+      ],
+      "template": "Iniciando processamento da respota da execução de tarefa '<UUID>'"
+    },
+    {
+      "template_id": 279,
+      "fit_count": 7024,
+      "wildcards": 20,
+      "distinct_services": [
+        "scheduler"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Message received from scheduler queue: (Body:'{\"quantidade\":<NUM>}' MessageProperties [headers={X-Tenant-Header=silveira2<NUM>, X-MessageId-Header=<UUID>, X-Hops-Count-Header=<NUM>, X-Tenant-Canary-Header=null, X-TerminalId-Header=null, X-TraceCallStack-Header=(scheduler@triercloudadmin):platform-scheduler/(ctx-p:null, p:taskBuscaCotacoes)>>(scheduler@triercloudadmin):compra-pedido/actions/taskBuscaCotacoes, X-Abrangencia-Empresa-Enabled-Header=true, X-Access-Token=null, X-User-Impersonate-Heade",
+        "Message received from scheduler queue: (Body:'{\"quantidade\":<NUM>}' MessageProperties [headers={X-Tenant-Header=f2<NUM>, X-MessageId-Header=<UUID>, X-Hops-Count-Header=<NUM>, X-Tenant-Canary-Header=null, X-TerminalId-Header=null, X-TraceCallStack-Header=(scheduler@triercloudadmin):platform-scheduler/(ctx-p:null, p:taskBuscaCotacoes)>>(scheduler@triercloudadmin):compra-pedido/actions/taskBuscaCotacoes, X-Abrangencia-Empresa-Enabled-Header=true, X-Access-Token=null, X-User-Impersonate-Header=null,",
+        "Message received from scheduler queue: (Body:'{\"quantidade\":<NUM>}' MessageProperties [headers={X-Tenant-Header=f1<NUM>, X-MessageId-Header=<UUID>, X-Hops-Count-Header=<NUM>, X-Tenant-Canary-Header=null, X-TerminalId-Header=null, X-TraceCallStack-Header=(scheduler@triercloudadmin):platform-scheduler/(ctx-p:null, p:taskBuscaCotacoes)>>(scheduler@triercloudadmin):compra-pedido/actions/taskBuscaCotacoes, X-Abrangencia-Empresa-Enabled-Header=true, X-Access-Token=null, X-User-Impersonate-Header=null,"
+      ],
+      "template": "Message received from scheduler queue: <*> MessageProperties <*> X-MessageId-Header=<UUID>, X-Hops-Count-Header=<NUM>, <*> X-TerminalId-Header=null, X-TraceCallStack-Header=(scheduler@triercloudadmin):platform-scheduler/(ctx-p:null, <*> X-Abrangencia-Empresa-Enabled-Header=true, X-Access-Token=null, X-User-Impersonate-Header=null, <*> X-Destination-Domain-Header=platform, X-User-Header=scheduler@triercloudadmin, X-TraceId-Header=<UUID>, <*> <*> <*> X-Event-Description-Header=null, X-EmpresasSelecionadasIds-Header=null, X-Client-Id-Header=triercloud-web, X-Event-Token-Header=null, X-Trusted-Header=true, <*> X-ZoneId-Header=UTC, <*> X-User-Empresas-Header=null, X-Destination-Service-Header=scheduler, <*> correlationId=<UUID>, contentType=application/json, contentEncoding=UTF-<NUM>, contentLength=<NUM>, receivedDeliveryMode=PERSISTENT, priority=<NUM>, redelivered=false, receivedExchange=trier.cloud.domains.exchange.topic, receivedRoutingKey=trier.cloud.*.platform.scheduler.scheduler.routi"
+    },
+    {
+      "template_id": 24,
+      "fit_count": 6991,
+      "wildcards": 4,
+      "distinct_services": [
+        "agafarma",
+        "api",
+        "cadastrofacilitado",
+        "caixabalcao",
+        "cliente",
+        "comissao",
+        "contasreceber",
+        "dashboard",
+        "desktop",
+        "edocs",
+        "entrada",
+        "estoque",
+        "fiscal",
+        "gestaocontrolados",
+        "gestaofinanceira",
+        "pedido",
+        "produto",
+        "redepdc",
+        "referenciaprecos",
+        "scheduler",
+        "security",
+        "setup",
+        "venda"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "[initExternalMigrations] - External migration for [t:f2<NUM>, d:cadastro, s:empresa, u:api@triercloudadmin]: true.",
+        "[initExternalMigrations] - External migration for [t:f3<NUM>, d:cadastro, s:empresa, u:api@triercloudadmin]: true.",
+        "[initExternalMigrations] - External migration for [t:f2<NUM>, d:cadastro, s:empresa, u:api@triercloudadmin]: true."
+      ],
+      "template": "[initExternalMigrations] - External migration for <*> <*> <*> <*> true."
+    },
+    {
+      "template_id": 5,
+      "fit_count": 6238,
+      "wildcards": 9,
+      "distinct_services": [
+        "estoque",
+        "produto",
+        "venda"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Salvou contexto do SAGA: 'Saga de finalização de venda', id: '<UUID>', correlationId: '<UUID>', SAGA status: 'INVOKING', passo: '<NUM>'.",
+        "Salvou contexto do SAGA: 'Saga de finalização de venda', id: '<UUID>', correlationId: '<UUID>', SAGA status: 'EVALUATED', passo: '<NUM>'.",
+        "Salvou contexto do SAGA: 'Saga de finalização de venda', id: '<UUID>', correlationId: '<UUID>', SAGA status: 'INVOKING', passo: '<NUM>'."
+      ],
+      "template": "Salvou contexto do SAGA: <*> <*> <*> <*> <*> id: '<UUID>', correlationId: '<UUID>', SAGA status: <*> passo: '<NUM>'."
+    },
+    {
+      "template_id": 15,
+      "fit_count": 5810,
+      "wildcards": 6,
+      "distinct_services": [
+        "security"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Persistindo histórico de acesso para o evento 'EventAuditingPayload(tenant=c2<NUM>, username=suporte@c2<NUM>, empresa=<UUID>, resource=urn:triercloud_resource:platform/setup/query/integracaoCloudPage, action=EXECUTE, date=<TIMESTAMP>, eventToken=null, eventDescription=null)'",
+        "Persistindo histórico de acesso para o evento 'EventAuditingPayload(tenant=c2<NUM>, username=suporte@c2<NUM>, empresa=<UUID>, resource=urn:triercloud_resource:platform/setup/query/integracaoCloudPage, action=EXECUTE, date=<TIMESTAMP>, eventToken=null, eventDescription=null)'",
+        "Persistindo histórico de acesso para o evento 'EventAuditingPayload(tenant=c2<NUM>, username=suporte@c2<NUM>, empresa=<UUID>, resource=urn:triercloud_resource:platform/setup/action/atualizarStatusSgf, action=EXECUTE, date=<TIMESTAMP>, eventToken=null, eventDescription=null)'"
+      ],
+      "template": "Persistindo histórico de acesso para o evento <*> <*> empresa=<UUID>, <*> <*> date=<TIMESTAMP>, <*> eventDescription=null)'"
+    },
+    {
+      "template_id": 83,
+      "fit_count": 5757,
+      "wildcards": 3,
+      "distinct_services": [
+        "agafarma",
+        "cadastrofacilitado",
+        "caixabalcao",
+        "comissao",
+        "contasreceber",
+        "dashboard",
+        "desktop",
+        "edocs",
+        "empresa",
+        "entrada",
+        "estoque",
+        "fiscal",
+        "gestaocontrolados",
+        "gestaofinanceira",
+        "pedido",
+        "produto",
+        "redepdc",
+        "referenciaprecos",
+        "scheduler",
+        "security",
+        "setup",
+        "venda"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Force: false. Tenant 'lisfarma2<NUM>' - Carga inicial da entidade 'formaPagamento'. Iniciando...",
+        "Force: false. Tenant 'santamarta2<NUM>' - Carga inicial da entidade 'convenio'. Iniciando...",
+        "Force: false. Tenant 'santamarta2<NUM>' - Carga inicial da entidade 'formaPagamento'. Iniciando..."
+      ],
+      "template": "Force: <*> Tenant <*> - Carga inicial da entidade <*> Iniciando..."
+    },
+    {
+      "template_id": 84,
+      "fit_count": 5748,
+      "wildcards": 2,
+      "distinct_services": [
+        "agafarma",
+        "cadastrofacilitado",
+        "caixabalcao",
+        "cliente",
+        "comissao",
+        "contasreceber",
+        "dashboard",
+        "edocs",
+        "entrada",
+        "estoque",
+        "fiscal",
+        "gestaocontrolados",
+        "gestaofinanceira",
+        "pedido",
+        "produto",
+        "redepdc",
+        "referenciaprecos",
+        "scheduler",
+        "security",
+        "setup",
+        "venda"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Force: false. Tenant 'lisfarma2<NUM>' - Carga inicial da entidade 'cliente'. ABORTADO! Processo já finalizado em <TIMESTAMP>",
+        "Force: false. Tenant 'lisfarma2<NUM>' - Carga inicial da entidade 'conferenciaCaixa'. ABORTADO! Processo já finalizado em <TIMESTAMP>",
+        "Force: false. Tenant 'santamarta2<NUM>' - Carga inicial da entidade 'cidadeEmpresa'. ABORTADO! Processo já finalizado em <TIMESTAMP>"
+      ],
+      "template": "Force: false. Tenant <*> - Carga inicial da entidade <*> ABORTADO! Processo já finalizado em <TIMESTAMP>"
+    },
+    {
+      "template_id": 12,
+      "fit_count": 4766,
+      "wildcards": 5,
+      "distinct_services": [
+        "api",
+        "contasreceber",
+        "desktop",
+        "entrada",
+        "estoque",
+        "pedido",
+        "produto"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Creating FDW tables for server: 'fdw_server_triercloud_cadastro_produto', configs: FdwServerConfig(host=triercloud-prod-master.cfaicaw86r1s.us-east-<NUM>.rds.amazonaws.com, port=<NUM>, dbname=cadastro_produto, localUser=triercloud_admin_prod, foreignUser=triercloud_admin_prod).",
+        "Creating FDW tables for server: 'fdw_server_triercloud_cadastro_produto', configs: FdwServerConfig(host=triercloud-prod-master.cfaicaw86r1s.us-east-<NUM>.rds.amazonaws.com, port=<NUM>, dbname=cadastro_produto, localUser=triercloud_admin_prod, foreignUser=triercloud_admin_prod).",
+        "Creating FDW tables for server: 'fdw_server_triercloud_cadastro_empresa', configs: FdwServerConfig(host=triercloud-prod-master.cfaicaw86r1s.us-east-<NUM>.rds.amazonaws.com, port=<NUM>, dbname=cadastro_empresa, localUser=triercloud_admin_prod, foreignUser=triercloud_admin_prod)."
+      ],
+      "template": "Creating FDW tables for server: <*> configs: <*> port=<NUM>, <*> localUser=triercloud_admin_prod, <*>"
+    },
+    {
+      "template_id": 26,
+      "fit_count": 4486,
+      "wildcards": 3,
+      "distinct_services": [
+        "security"
+      ],
+      "levels": [
+        "ERROR"
+      ],
+      "examples": [
+        "Erro decodificando token JWT - Usuário do contexto: 'suporte@c2<NUM>' e usuário da claim: 'desktop@triercloudadmin' são diferentes para o token: '<JWT_<NUM>6b3<NUM>6f5<NUM>4fa3<NUM>>'.",
+        "Erro decodificando token JWT - Usuário do contexto: 'suporte@f7<NUM>' e usuário da claim: 'desktop@triercloudadmin' são diferentes para o token: '<JWT_6ab4<NUM>0d5b5<NUM>9faeb1a5a>'.",
+        "Erro decodificando token JWT - Usuário do contexto: 'suporte@c2<NUM>' e usuário da claim: 'desktop@triercloudadmin' são diferentes para o token: '<JWT_4bb56f22a60d4ac7b03e>'."
+      ],
+      "template": "Erro decodificando token JWT - Usuário do contexto: <*> e usuário da claim: <*> são diferentes para o token: <*>"
+    },
+    {
+      "template_id": 105,
+      "fit_count": 3255,
+      "wildcards": 3,
+      "distinct_services": [
+        "agafarma",
+        "cadastrofacilitado",
+        "caixabalcao",
+        "cliente",
+        "comissao",
+        "contasreceber",
+        "dashboard",
+        "empresa",
+        "entrada",
+        "estoque",
+        "fiscal",
+        "gestaocontrolados",
+        "gestaofinanceira",
+        "pec",
+        "pedido",
+        "produto",
+        "redepdc",
+        "referenciaprecos",
+        "scheduler",
+        "security",
+        "setup",
+        "venda"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Carga inicial finalizada para tenant 'santamarta2<NUM>', EntityInitialLoadResult(entityName=tenant, recordsLoaded=<NUM>)",
+        "Carga inicial finalizada para tenant 'drogfarma2<NUM>', EntityInitialLoadResult(entityName=grupo, recordsLoaded=<NUM>)",
+        "Carga inicial finalizada para tenant 'curafarma2<NUM>', EntityInitialLoadResult(entityName=categoria, recordsLoaded=<NUM>)"
+      ],
+      "template": "Carga inicial finalizada para tenant <*> <*> recordsLoaded=<NUM>)"
+    },
+    {
+      "template_id": 18,
+      "fit_count": 3002,
+      "wildcards": 1,
+      "distinct_services": [
+        "setup"
+      ],
+      "levels": [
+        "WARN"
+      ],
+      "examples": [
+        "[INTEGRACAO-CLOUD-SGF] requireEmpresa :: resolveEmpresaId retornou <UUID>",
+        "[INTEGRACAO-CLOUD-SGF] requireEmpresa :: resolveEmpresaId retornou <UUID>",
+        "[INTEGRACAO-CLOUD-SGF] requireEmpresa :: resolveEmpresaId retornou <UUID>"
+      ],
+      "template": "[INTEGRACAO-CLOUD-SGF] requireEmpresa :: resolveEmpresaId retornou <UUID>"
+    },
+    {
+      "template_id": 117,
+      "fit_count": 2962,
+      "wildcards": 3,
+      "distinct_services": [
+        "cadastrofacilitado",
+        "caixabalcao",
+        "comissao",
+        "contasreceber",
+        "dashboard",
+        "edocs",
+        "entrada",
+        "estoque",
+        "fiscal",
+        "gestaocontrolados",
+        "gestaofinanceira",
+        "pedido",
+        "produto",
+        "referenciaprecos",
+        "security",
+        "setup",
+        "venda"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Iniciando a carga inicial da entidade: 'cidadeEmpresa', ordem: '<NUM>', do tenant: 'curafarma2<NUM>'...",
+        "Iniciando a carga inicial da entidade: 'produto', ordem: '<NUM>', do tenant: 'f2<NUM>'...",
+        "Iniciando a carga inicial da entidade: 'cliente', ordem: '<NUM>', do tenant: 'f3<NUM>'..."
+      ],
+      "template": "Iniciando a carga inicial da entidade: <*> ordem: '<NUM>', do tenant: <*>"
+    },
+    {
+      "template_id": 7,
+      "fit_count": 2928,
+      "wildcards": 3,
+      "distinct_services": [
+        "venda"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Chamando doInvoke do passo: '<NUM>-Calcular CMV' do SAGA: 'Saga de finalização de venda'.",
+        "Chamando doEvaluate do passo: '<NUM>-Apurar comissão' do SAGA: 'Saga de finalização de venda'.",
+        "Chamando doInvoke do passo: '<NUM>-Apurar venda' do SAGA: 'Saga de finalização de venda'."
+      ],
+      "template": "Chamando <*> do passo: <*> <*> do SAGA: 'Saga de finalização de venda'."
+    },
+    {
+      "template_id": 85,
+      "fit_count": 2911,
+      "wildcards": 4,
+      "distinct_services": [
+        "cadastrofacilitado",
+        "caixabalcao",
+        "comissao",
+        "contasreceber",
+        "dashboard",
+        "edocs",
+        "entrada",
+        "estoque",
+        "fiscal",
+        "gestaocontrolados",
+        "gestaofinanceira",
+        "pedido",
+        "produto",
+        "referenciaprecos",
+        "security",
+        "setup",
+        "venda"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "A carga inicial da entidade: 'caixa', ordem: '<NUM>', do tenant: 'lisfarma2<NUM>' foi executada em: <NUM> ms.",
+        "A carga inicial da entidade: 'conferenciaCaixa', ordem: '<NUM>', do tenant: 'lisfarma2<NUM>' foi executada em: <NUM> ms.",
+        "A carga inicial da entidade: 'empresa', ordem: '<NUM>', do tenant: 'drogariasazulsaude2<NUM>' foi executada em: <NUM> ms."
+      ],
+      "template": "A carga inicial da entidade: <*> ordem: '<NUM>', do tenant: <*> foi executada em: <NUM> ms."
+    },
+    {
+      "template_id": 55,
+      "fit_count": 2625,
+      "wildcards": 2,
+      "distinct_services": [
+        "sincronizacao"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Cliente: <NUM>/<HEX_<NUM>8eda2<NUM>8aee47f>. Todos os <NUM> códigos de barras foram localizados no cache.",
+        "Cliente: <NUM>/<HEX_<NUM>7bc1<NUM>3ebee9<NUM>4c>. Todos os <NUM> códigos de barras foram localizados no cache.",
+        "Cliente: <NUM>/<HEX_<NUM>8eda2<NUM>8aee47f>. Todos os <NUM> códigos de barras foram localizados no cache."
+      ],
+      "template": "Cliente: <*> Todos os <NUM> códigos de barras foram localizados no cache."
+    },
+    {
+      "template_id": 25,
+      "fit_count": 2482,
+      "wildcards": 2,
+      "distinct_services": [
+        "api",
+        "contasreceber",
+        "desktop",
+        "entrada",
+        "estoque",
+        "pedido",
+        "produto"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Creating FDW tables (local -> foreign): triercloudadmin_platform_api.fdw_empresa_f2<NUM>_4e01fa3bc6<NUM>3bc9<NUM>7db20b4<NUM>0d3<NUM> -> f2<NUM>_cadastro_empresa.empresa",
+        "Creating FDW tables (local -> foreign): triercloudadmin_platform_api.fdw_empresa_f3<NUM>_<NUM>9ebc0c90a3<NUM>4ab3bb2<NUM>7e8f5b2<NUM>3b4<NUM> -> f3<NUM>_cadastro_empresa.empresa",
+        "Creating FDW tables (local -> foreign): triercloudadmin_platform_api.fdw_empresa_f3<NUM>_abe53c2ed2da4d92a3c0<NUM>1fee9<NUM>5cb -> f3<NUM>_cadastro_empresa.empresa"
+      ],
+      "template": "Creating FDW tables (local -> foreign): <*> -> <*>"
+    },
+    {
+      "template_id": 19,
+      "fit_count": 2285,
+      "wildcards": 2,
+      "distinct_services": [
+        "comissao",
+        "dashboard",
+        "desktop",
+        "venda"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Descartando processamento de 'cadastro.produto'. O serviço atual está com a replicação excluída para o tenant 'c3<NUM>'.",
+        "Descartando processamento de 'cadastro.produto'. O serviço atual está com a replicação excluída para o tenant 'c3<NUM>'.",
+        "Descartando processamento de 'cadastro.produto'. O serviço atual está com a replicação excluída para o tenant 'c3<NUM>'."
+      ],
+      "template": "Descartando processamento de <*> O serviço atual está com a replicação excluída para o tenant <*>"
+    },
+    {
+      "template_id": 78,
+      "fit_count": 2248,
+      "wildcards": 4,
+      "distinct_services": [
+        "agafarma",
+        "cadastrofacilitado",
+        "caixabalcao",
+        "cliente",
+        "comissao",
+        "contasreceber",
+        "dashboard",
+        "desktop",
+        "edocs",
+        "empresa",
+        "entrada",
+        "estoque",
+        "fiscal",
+        "gestaocontrolados",
+        "gestaofinanceira",
+        "pedido",
+        "produto",
+        "redepdc",
+        "referenciaprecos",
+        "scheduler",
+        "security",
+        "setup",
+        "venda"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "[doPrepareExternalMigration] - Will execute prepare migration for t:lisfarma2<NUM>, d:mercado, s:venda, u:desktop@lisfarma2<NUM>.",
+        "[doPrepareExternalMigration] - Will execute prepare migration for t:drogfarma2<NUM>, d:cadastro, s:empresa, u:desktop@drogfarma2<NUM>.",
+        "[doPrepareExternalMigration] - Will execute prepare migration for t:curafarma2<NUM>, d:cadastro, s:empresa, u:karine@curafarma2<NUM>."
+      ],
+      "template": "[doPrepareExternalMigration] - Will execute prepare migration for <*> <*> <*> <*>"
+    },
+    {
+      "template_id": 79,
+      "fit_count": 2215,
+      "wildcards": 6,
+      "distinct_services": [
+        "agafarma",
+        "cadastrofacilitado",
+        "caixabalcao",
+        "cliente",
+        "comissao",
+        "dashboard",
+        "desktop",
+        "edocs",
+        "entrada",
+        "estoque",
+        "fiscal",
+        "gestaocontrolados",
+        "gestaofinanceira",
+        "pedido",
+        "produto",
+        "redepdc",
+        "referenciaprecos",
+        "scheduler",
+        "security",
+        "setup",
+        "venda"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "[doPrepareExternalMigration] - <NUM> ms for t:lisfarma2<NUM>, d:cadastro, s:cliente, u:desktop@lisfarma2<NUM>, with result: GetHealthDBOutput(status=UP, tenant=lisfarma2<NUM>, now=<TIMESTAMP>).",
+        "[doPrepareExternalMigration] - <NUM> ms for t:santamarta2<NUM>, d:cadastro, s:empresa, u:fran@santamarta2<NUM>, with result: GetHealthDBOutput(status=UP, tenant=santamarta2<NUM>, now=<TIMESTAMP>).",
+        "[doPrepareExternalMigration] - <NUM> ms for t:santamarta2<NUM>, d:suprimento, s:estoque, u:fran@santamarta2<NUM>, with result: GetHealthDBOutput(status=UP, tenant=santamarta2<NUM>, now=<TIMESTAMP>)."
+      ],
+      "template": "[doPrepareExternalMigration] - <NUM> ms for <*> <*> <*> <*> with result: GetHealthDBOutput(status=UP, <*> now=<TIMESTAMP>)."
+    },
+    {
+      "template_id": 9,
+      "fit_count": 2087,
+      "wildcards": 1,
+      "distinct_services": [
+        "agafarma",
+        "ai",
+        "cadastrofacilitado",
+        "caixabalcao",
+        "cliente",
+        "comissao",
+        "dashboard",
+        "edocs",
+        "empresa",
+        "entrada",
+        "estoque",
+        "fiscal",
+        "gestaocontrolados",
+        "notification",
+        "pedido",
+        "perfil",
+        "produto",
+        "redepdc",
+        "referenciaprecos",
+        "saga",
+        "scheduler",
+        "sequencial",
+        "setup",
+        "venda"
+      ],
+      "levels": [
+        "WARN"
+      ],
+      "examples": [
+        "outOfOrder mode is active. Migration of schema \"f2<NUM>_platform_notification\" may not be reproducible.",
+        "outOfOrder mode is active. Migration of schema \"f5<NUM>_platform_notification\" may not be reproducible.",
+        "outOfOrder mode is active. Migration of schema \"f4<NUM>_platform_notification\" may not be reproducible."
+      ],
+      "template": "outOfOrder mode is active. Migration of schema <*> may not be reproducible."
+    },
+    {
+      "template_id": 46,
+      "fit_count": 1988,
+      "wildcards": 2,
+      "distinct_services": [
+        "setup"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Step: [step_SaidaProdutoCSVEntity_Reader_e6<NUM>3f0<NUM><NUM>-4cd7-a7e1<NUM>2e4<NUM>4a] executed in <NUM>9ms",
+        "Step: [END_STEP_SINCRONIZACAO_STAGE_SAIDA_PRODUTOS_c9d8adaa-<NUM><NUM>0b-b2c2<NUM>3ec7<NUM>] executed in <NUM>1ms",
+        "Step: [START_STEP_SINCRONIZACAO_SENDER_PRECOS_d66d6<NUM>8e-8bb6<NUM>-bb6<NUM>-bd8ee5<NUM>1b0] executed in <NUM>3ms"
+      ],
+      "template": "Step: <*> executed in <*>"
+    },
+    {
+      "template_id": 56,
+      "fit_count": 1982,
+      "wildcards": 1,
+      "distinct_services": [
+        "setup"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Executing step: [Step_ESTOQUE_SALDO_EstoqueSaldoCSVEntity_de6<NUM>5f4-aaea-4cb8-aa0<NUM><NUM>1f2<NUM>0f91d]",
+        "Executing step: [START_STEP_SINCRONIZACAO_STAGE_SAIDA_PRODUTOS_<NUM>5f9<NUM><NUM>0d-4f4<NUM>-8a5a-<NUM>0f0cd06a2]",
+        "Executing step: [START_STEP_SINCRONIZACAO_STAGE_ENTRADA_XML_a7e9<NUM>4e-<NUM>-4ff1<NUM>-ccbf3<NUM>1fbca]"
+      ],
+      "template": "Executing step: <*>"
+    },
+    {
+      "template_id": 90,
+      "fit_count": 1631,
+      "wildcards": 8,
+      "distinct_services": [
+        "scheduler"
+      ],
+      "levels": [
+        "WARN"
+      ],
+      "examples": [
+        "TASK '<UUID> - inutilizarNumerosNotaFiscalPendentesAutomatico [inutilizarNumerosNotaFiscalPendentesAutomatico]', tenant 'drogariasazulsaude2<NUM>', status: 'RUNNING', active: 'true', cron: '<NUM> <NUM> <NUM> * * *' NÃO pode ser iniciada (canScheduleTask = false).",
+        "TASK '<UUID> - gerarRegistrosInutilizacaoNotasAutomatica [gerarRegistrosInutilizacaoNotasAutomatica]', tenant 'drogariasazulsaude2<NUM>', status: 'RUNNING', active: 'true', cron: '<NUM> <NUM> <NUM> * * ?' NÃO pode ser iniciada (canScheduleTask = false).",
+        "TASK '<UUID> - taskEncerrarVinculacaoCadastroFacilitadoSemProgresso [taskEncerrarVinculacaoCadastroFacilitadoSemProgresso]', tenant 'santamarta2<NUM>', status: 'RUNNING', active: 'true', cron: '<NUM> <NUM> * * * *' NÃO pode ser iniciada (canScheduleTask = false)."
+      ],
+      "template": "TASK '<UUID> - <*> <*> tenant <*> status: 'RUNNING', active: 'true', cron: '<NUM> <*> <*> * * <*> NÃO pode ser iniciada (canScheduleTask = false)."
+    },
+    {
+      "template_id": 96,
+      "fit_count": 1603,
+      "wildcards": 10,
+      "distinct_services": [
+        "scheduler"
+      ],
+      "levels": [
+        "WARN"
+      ],
+      "examples": [
+        "A configuração da task '<UUID> - reprocessarNotasPendentesAutomatico' foi salva para 'domínio: 'platform', serviço: 'edocs', tenant: 'drogariasazulsaude2<NUM>'', mas o job não foi (re)agendado nesta tentativa. Status: 'RUNNING', cron: '<NUM> <NUM>/<NUM> * * * ?'.",
+        "A configuração da task '<UUID> - resolverInconsistenciasNotasAutomatico' foi salva para 'domínio: 'platform', serviço: 'edocs', tenant: 'drogariasazulsaude2<NUM>'', mas o job não foi (re)agendado nesta tentativa. Status: 'RUNNING', cron: '<NUM> <NUM> <NUM> * * <NUM>,<NUM>'.",
+        "A configuração da task '<UUID> - taskEncerrarVinculacaoCadastroFacilitadoSemProgresso' foi salva para 'domínio: 'cadastro', serviço: 'produto', tenant: 'f3<NUM>'', mas o job não foi (re)agendado nesta tentativa. Status: 'RUNNING', cron: '<NUM> <NUM> * * * *'."
+      ],
+      "template": "A configuração da task '<UUID> - <*> foi salva para 'domínio: <*> serviço: <*> tenant: <*> mas o job não foi (re)agendado nesta tentativa. Status: 'RUNNING', cron: '<NUM> <*> <*> <*> * <*>"
+    },
+    {
+      "template_id": 92,
+      "fit_count": 1598,
+      "wildcards": 1,
+      "distinct_services": [
+        "scheduler"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Task '<UUID>', configurada sem o Task Identifier.",
+        "Task '<UUID>', configurada sem o Task Identifier.",
+        "Task '<UUID>', configurada sem o Task Identifier."
+      ],
+      "template": "Task '<UUID>', configurada sem o Task Identifier."
+    },
+    {
+      "template_id": 91,
+      "fit_count": 1572,
+      "wildcards": 4,
+      "distinct_services": [
+        "scheduler"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Iniciando o agendamento da task 'gerarRegistrosInutilizacaoNotasAutomatica-null' para domínio: 'platform', serviço: 'edocs', tenant: 'drogariasazulsaude2<NUM>'...",
+        "Iniciando o agendamento da task 'reprocessarNotasPendentesAutomatico-null' para domínio: 'platform', serviço: 'edocs', tenant: 'drogariasazulsaude2<NUM>'...",
+        "Iniciando o agendamento da task 'taskEncerrarVinculacaoCadastroFacilitadoSemProgresso-null' para domínio: 'cadastro', serviço: 'produto', tenant: 'drogariasazulsaude2<NUM>'..."
+      ],
+      "template": "Iniciando o agendamento da task <*> para domínio: <*> serviço: <*> tenant: <*>"
+    },
+    {
+      "template_id": 97,
+      "fit_count": 1566,
+      "wildcards": 6,
+      "distinct_services": [
+        "scheduler"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Cron da Task '<UUID>', alterada por configuração para '<NUM> <NUM> <NUM> * * <NUM>'.",
+        "Cron da Task '<UUID>', alterada por configuração para '<NUM> <NUM> <NUM> * * *'.",
+        "Cron da Task '<UUID>', alterada por configuração para '<NUM> <NUM> * * * *'."
+      ],
+      "template": "Cron da Task '<UUID>', alterada por configuração para '<NUM> <*> <*> <*> * <*>"
+    },
+    {
+      "template_id": 104,
+      "fit_count": 1356,
+      "wildcards": 0,
+      "distinct_services": [
+        "produto"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "[configuration-helper] - Controle de atualização de campos de medicamento não habilitado. FeatureToggle: true, GestaoControlados: false",
+        "[configuration-helper] - Controle de atualização de campos de medicamento não habilitado. FeatureToggle: true, GestaoControlados: false",
+        "[configuration-helper] - Controle de atualização de campos de medicamento não habilitado. FeatureToggle: true, GestaoControlados: false"
+      ],
+      "template": "[configuration-helper] - Controle de atualização de campos de medicamento não habilitado. FeatureToggle: true, GestaoControlados: false"
+    },
+    {
+      "template_id": 14,
+      "fit_count": 1329,
+      "wildcards": 2,
+      "distinct_services": [
+        "security"
+      ],
+      "levels": [
+        "WARN"
+      ],
+      "examples": [
+        "rememberMeValue has no token that match with given token: '<JWT_<NUM>2c8<NUM>0d7eb2<NUM>>', remember-me tokens: 'false'.",
+        "rememberMeValue has no token that match with given token: '<JWT_dfbcfcbe5<NUM>2e5f6aaa0<NUM>>', remember-me tokens: 'false;<JWT_dfbcfcbe5<NUM>2e5f6aaa0<NUM>>'.",
+        "rememberMeValue has no token that match with given token: '<JWT_0c5<NUM>4d5<NUM>2ccb1<NUM>>', remember-me tokens: 'false'."
+      ],
+      "template": "rememberMeValue has no token that match with given token: <*> remember-me tokens: <*>"
+    },
+    {
+      "template_id": 99,
+      "fit_count": 1190,
+      "wildcards": 8,
+      "distinct_services": [
+        "api"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Vai criar as seguintes tabelas FDW no fdwServer: 'fdw_server_triercloud_cadastro_empresa', para o foreignSchema: 'f3<NUM>_cadastro_empresa': [FdwTableConfig(foreignSchema=f3<NUM>_cadastro_empresa, foreignTable=empresa, localSchema=triercloudadmin_platform_api, localTable=fdw_empresa_f3<NUM>_<NUM>0c7f2b3<NUM>4f4b89e6<NUM>0bf90a8<NUM>, columns={id=UUID, nome=VARCHAR(<NUM>), cnpj=VARCHAR(<NUM>)}, fetchSize=<NUM>)].",
+        "Vai criar as seguintes tabelas FDW no fdwServer: 'fdw_server_triercloud_cadastro_empresa', para o foreignSchema: 'f2<NUM>_cadastro_empresa': [FdwTableConfig(foreignSchema=f2<NUM>_cadastro_empresa, foreignTable=empresa, localSchema=triercloudadmin_platform_api, localTable=fdw_empresa_f2<NUM>_<NUM>5db7cba7<NUM>4d24a9fbdf8beca39dfe, columns={id=UUID, nome=VARCHAR(<NUM>), cnpj=VARCHAR(<NUM>)}, fetchSize=<NUM>)].",
+        "Vai criar as seguintes tabelas FDW no fdwServer: 'fdw_server_triercloud_cadastro_empresa', para o foreignSchema: 'f3<NUM>_cadastro_empresa': [FdwTableConfig(foreignSchema=f3<NUM>_cadastro_empresa, foreignTable=empresa, localSchema=triercloudadmin_platform_api, localTable=fdw_empresa_f3<NUM>_ef9ea6<NUM>4e42b2<NUM>8bf6<NUM>4eb60df3<NUM>, columns={id=UUID, nome=VARCHAR(<NUM>), cnpj=VARCHAR(<NUM>)}, fetchSize=<NUM>)]."
+      ],
+      "template": "Vai criar as seguintes tabelas FDW no fdwServer: <*> para o foreignSchema: <*> <*> <*> localSchema=triercloudadmin_platform_api, <*> columns={id=UUID, <*> <*> fetchSize=<NUM>)]."
+    },
+    {
+      "template_id": 29,
+      "fit_count": 1185,
+      "wildcards": 5,
+      "distinct_services": [
+        "api"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Vai criar as seguintes tabelas FDW no fdwServer: 'fdw_server_triercloud_cadastro_empresa', para o foreignSchema: 'f3<NUM>_cadastro_empresa': [FdwTableConfig(foreignSchema=f3<NUM>_cadastro_empresa, foreignTable=empresa, localSchema=triercloudadmin_platform_api, localTable=fdw_empresa_f3<NUM>_e13b8d85caed41a2bd9bd8<NUM>4bf8<NUM>5da, columns={id=UUID, cnpj=VARCHAR(<NUM>)}, fetchSize=<NUM>)].",
+        "Vai criar as seguintes tabelas FDW no fdwServer: 'fdw_server_triercloud_cadastro_empresa', para o foreignSchema: 'f2<NUM>_cadastro_empresa': [FdwTableConfig(foreignSchema=f2<NUM>_cadastro_empresa, foreignTable=empresa, localSchema=triercloudadmin_platform_api, localTable=fdw_empresa_f2<NUM>_f6<NUM>8af9cfed84d3c8a4<NUM>3afb9<NUM>5c6, columns={id=UUID, cnpj=VARCHAR(<NUM>)}, fetchSize=<NUM>)].",
+        "Vai criar as seguintes tabelas FDW no fdwServer: 'fdw_server_triercloud_cadastro_empresa', para o foreignSchema: 'f3<NUM>_cadastro_empresa': [FdwTableConfig(foreignSchema=f3<NUM>_cadastro_empresa, foreignTable=empresa, localSchema=triercloudadmin_platform_api, localTable=fdw_empresa_f3<NUM>_<NUM>6d62fed8<NUM>9bfbe8d2bf4<NUM>6e9<NUM>, columns={id=UUID, cnpj=VARCHAR(<NUM>)}, fetchSize=<NUM>)]."
+      ],
+      "template": "Vai criar as seguintes tabelas FDW no fdwServer: 'fdw_server_triercloud_cadastro_empresa', para o foreignSchema: <*> <*> foreignTable=empresa, localSchema=triercloudadmin_platform_api, <*> columns={id=UUID, cnpj=VARCHAR(<NUM>)}, fetchSize=<NUM>)]."
+    },
+    {
+      "template_id": 132,
+      "fit_count": 1147,
+      "wildcards": 13,
+      "distinct_services": [
+        "api"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Stopwatch: <NUM> ms for ['POST/produto/obter-todos-produtos', tenant: 'f2<NUM>', username: 'api@triercloudadmin', Thread: 'http-nio-<NUM>-exec-<NUM>']. --------------------------------------------- ms % Task name --------------------------------------------- <NUM> <NUM>% POST/produto/obter-todos-produtos <NUM> <NUM>% initExternalMigrations <NUM> <NUM>% initExternalMigrations",
+        "Stopwatch: <NUM> ms for ['POST/produto/obter-todos-produtos', tenant: 'f2<NUM>', username: 'api@triercloudadmin', Thread: 'http-nio-<NUM>-exec-<NUM>']. --------------------------------------------- ms % Task name --------------------------------------------- <NUM> <NUM>% POST/produto/obter-todos-produtos <NUM> <NUM>% initExternalMigrations <NUM> <NUM>% initExternalMigrations",
+        "Stopwatch: <NUM> ms for ['POST/produto/obter-todos-produtos', tenant: 'f3<NUM>', username: 'api@triercloudadmin', Thread: 'http-nio-<NUM>-exec-<NUM>']. --------------------------------------------- ms % Task name --------------------------------------------- <NUM> <NUM>% POST/produto/obter-todos-produtos <NUM> <NUM>% initExternalMigrations <NUM> <NUM>% initExternalMigrations"
+      ],
+      "template": "Stopwatch: <NUM> ms for <*> tenant: <*> username: 'api@triercloudadmin', Thread: 'http-nio-<NUM>-exec-<NUM>']. --------------------------------------------- ms % Task name --------------------------------------------- <NUM> <NUM>% <*> <NUM> <NUM>% <*> <NUM> <NUM>% initExternalMigrations"
+    },
+    {
+      "template_id": 27,
+      "fit_count": 1145,
+      "wildcards": 10,
+      "distinct_services": [
+        "api"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Stopwatch: <NUM> ms for ['POST/produto/obter-todos-produtos', tenant: 'f3<NUM>', username: 'api@triercloudadmin', Thread: 'http-nio-<NUM>-exec-<NUM>']. --------------------------------------------- ms % Task name --------------------------------------------- <NUM> <NUM>% POST/produto/obter-todos-produtos <NUM> <NUM>% initExternalMigrations",
+        "Stopwatch: <NUM> ms for ['POST/produto/obter-todos-produtos', tenant: 'f3<NUM>', username: 'api@triercloudadmin', Thread: 'http-nio-<NUM>-exec-<NUM>']. --------------------------------------------- ms % Task name --------------------------------------------- <NUM> <NUM>% POST/produto/obter-todos-produtos <NUM> <NUM>% initExternalMigrations",
+        "Stopwatch: <NUM> ms for ['POST/produto/obter-todos-produtos', tenant: 'f3<NUM>', username: 'api@triercloudadmin', Thread: 'http-nio-<NUM>-exec-<NUM>']. --------------------------------------------- ms % Task name --------------------------------------------- <NUM> <NUM>% POST/produto/obter-todos-produtos <NUM> <NUM>% initExternalMigrations"
+      ],
+      "template": "Stopwatch: <NUM> ms for <*> tenant: <*> username: 'api@triercloudadmin', Thread: 'http-nio-<NUM>-exec-<NUM>']. --------------------------------------------- ms % Task name --------------------------------------------- <NUM> <NUM>% <*> <NUM> <NUM>% initExternalMigrations"
+    },
+    {
+      "template_id": 28,
+      "fit_count": 1132,
+      "wildcards": 6,
+      "distinct_services": [
+        "venda"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Chamando doEvaluate do passo: '<NUM>-Salvar documento fiscal venda desktop' do SAGA: 'Saga de finalização de venda'.",
+        "Chamando doInvoke do passo: '<NUM>-Salvar documento fiscal venda desktop' do SAGA: 'Saga de finalização de venda'.",
+        "Chamando doEvaluate do passo: '<NUM>-Salvar documento fiscal venda desktop' do SAGA: 'Saga de finalização de venda'."
+      ],
+      "template": "Chamando <*> do passo: <*> <*> <*> <*> <*> do SAGA: 'Saga de finalização de venda'."
+    },
+    {
+      "template_id": 193,
+      "fit_count": 1127,
+      "wildcards": 2,
+      "distinct_services": [
+        "cadastrofacilitado",
+        "desktop",
+        "edocs",
+        "entrada",
+        "setup",
+        "venda"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Agendamento de primitiva enviado para o scheduler com o retorno: TaskConfigResponse(taskName=buscarXmlSefazAutomatico, taskId=<UUID>, success=false, message=Configuração salva; job não (re)agendado nesta tentativa (task em execução/órfã).)",
+        "Agendamento de primitiva enviado para o scheduler com o retorno: TaskConfigResponse(taskName=buscaNotasIndisponiveis, taskId=<UUID>, success=false, message=Configuração salva; job não (re)agendado nesta tentativa (task em execução/órfã).)",
+        "Agendamento de primitiva enviado para o scheduler com o retorno: TaskConfigResponse(taskName=buscaNotasIndisponiveis, taskId=<UUID>, success=false, message=Configuração salva; job não (re)agendado nesta tentativa (task em execução/órfã).)"
+      ],
+      "template": "Agendamento de primitiva enviado para o scheduler com o retorno: <*> taskId=<UUID>, success=false, message=Configuração salva; job não (re)agendado nesta tentativa (task em execução/órfã).)"
+    },
+    {
+      "template_id": 37,
+      "fit_count": 1124,
+      "wildcards": 92,
+      "distinct_services": [
+        "api"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Vai criar as seguintes tabelas FDW no fdwServer: 'fdw_server_triercloud_cadastro_produto', para o foreignSchema: 'f2<NUM>_cadastro_produto': [FdwTableConfig(foreignSchema=f2<NUM>_cadastro_produto, foreignTable=hierarquia_desconto, localSchema=triercloudadmin_platform_api, localTable=fdw_hierarquia_desconto_f2<NUM>_<NUM>3da6dd8<NUM>9b4<NUM>8aea1af3d5fc8c8f0, columns={id=UUID, valor=NUMERIC(<NUM>, <NUM>)}, fetchSize=<NUM>), FdwTableConfig(foreignSchema=f2<NUM>_cadastro_produto, foreignTable=campan",
+        "Vai criar as seguintes tabelas FDW no fdwServer: 'fdw_server_triercloud_cadastro_produto', para o foreignSchema: 'f2<NUM>_cadastro_produto': [FdwTableConfig(foreignSchema=f2<NUM>_cadastro_produto, foreignTable=hierarquia_desconto, localSchema=triercloudadmin_platform_api, localTable=fdw_hierarquia_desconto_f2<NUM>_be1<NUM>7aadc54f4<NUM>8ab76cd91bc48b86a, columns={id=UUID, valor=NUMERIC(<NUM>, <NUM>)}, fetchSize=<NUM>), FdwTableConfig(foreignSchema=f2<NUM>_cadastro_produto, foreignTable=campanha_",
+        "Vai criar as seguintes tabelas FDW no fdwServer: 'fdw_server_triercloud_cadastro_produto', para o foreignSchema: 'f3<NUM>_cadastro_produto': [FdwTableConfig(foreignSchema=f3<NUM>_cadastro_produto, foreignTable=hierarquia_desconto, localSchema=triercloudadmin_platform_api, localTable=fdw_hierarquia_desconto_f3<NUM>_8bc5bd79ed4c4fb38f4c3<NUM>5f62ac0b, columns={id=UUID, valor=NUMERIC(<NUM>, <NUM>)}, fetchSize=<NUM>), FdwTableConfig(foreignSchema=f3<NUM>_cadastro_produto, foreignTable=campanha_conta"
+      ],
+      "template": "Vai criar as seguintes tabelas FDW no fdwServer: 'fdw_server_triercloud_cadastro_produto', para o foreignSchema: <*> <*> foreignTable=hierarquia_desconto, localSchema=triercloudadmin_platform_api, <*> columns={id=UUID, valor=NUMERIC(<NUM>, <NUM>)}, fetchSize=<NUM>), <*> foreignTable=campanha_container, localSchema=triercloudadmin_platform_api, <*> columns={id=UUID, inicio=TIMESTAMP, fim=TIMESTAMP}, fetchSize=<NUM>), <*> foreignTable=categoria, localSchema=triercloudadmin_platform_api, <*> columns={id=UUID, nome=VARCHAR(<NUM>)}, fetchSize=<NUM>), <*> foreignTable=estoque_saldo, localSchema=triercloudadmin_platform_api, <*> columns={id=UUID, produto=UUID, empresa=UUID, quantidade=NUMERIC(<NUM>)}, fetchSize=<NUM>), <*> foreignTable=grupo, localSchema=triercloudadmin_platform_api, <*> columns={id=UUID, nome=VARCHAR(<NUM>)}, fetchSize=<NUM>), <*> foreignTable=classe_terapeutica, localSchema=triercloudadmin_platform_api, <*> columns={id=UUID, nome=VARCHAR(<NUM>)}, fetchSize=<NUM>), <*> forei"
+    },
+    {
+      "template_id": 16,
+      "fit_count": 1072,
+      "wildcards": 24,
+      "distinct_services": [
+        "api"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Vai criar as seguintes tabelas FDW no fdwServer: 'fdw_server_triercloud_cadastro_produto', para o foreignSchema: 'f3<NUM>_cadastro_produto': [FdwTableConfig(foreignSchema=f3<NUM>_cadastro_produto, foreignTable=preco, localSchema=triercloudadmin_platform_api, localTable=fdw_preco_f3<NUM>_<NUM>7ee51ca0eb04a8d84d4fb9<NUM>5dc4<NUM>, columns={id=UUID, valor_preco_venda=NUMERIC(<NUM>, <NUM>), produto=UUID, empresa=UUID}, fetchSize=<NUM>), FdwTableConfig(foreignSchema=f3<NUM>_cadastro_produto, foreignT",
+        "Vai criar as seguintes tabelas FDW no fdwServer: 'fdw_server_triercloud_cadastro_produto', para o foreignSchema: 'f3<NUM>_cadastro_produto': [FdwTableConfig(foreignSchema=f3<NUM>_cadastro_produto, foreignTable=preco, localSchema=triercloudadmin_platform_api, localTable=fdw_preco_f3<NUM>_b3e5<NUM>9f3e2<NUM>5ababb9dded2f0df1, columns={id=UUID, valor_preco_venda=NUMERIC(<NUM>, <NUM>), produto=UUID, empresa=UUID}, fetchSize=<NUM>), FdwTableConfig(foreignSchema=f3<NUM>_cadastro_produto, foreignTable=",
+        "Vai criar as seguintes tabelas FDW no fdwServer: 'fdw_server_triercloud_cadastro_produto', para o foreignSchema: 'f3<NUM>_cadastro_produto': [FdwTableConfig(foreignSchema=f3<NUM>_cadastro_produto, foreignTable=preco, localSchema=triercloudadmin_platform_api, localTable=fdw_preco_f3<NUM>_5cdc7c0b7e9b4a11bc7<NUM>6f43a2aa6ad, columns={id=UUID, valor_preco_venda=NUMERIC(<NUM>, <NUM>), produto=UUID, empresa=UUID}, fetchSize=<NUM>), FdwTableConfig(foreignSchema=f3<NUM>_cadastro_produto, foreignTable=d"
+      ],
+      "template": "Vai criar as seguintes tabelas FDW no fdwServer: 'fdw_server_triercloud_cadastro_produto', para o foreignSchema: <*> <*> foreignTable=preco, localSchema=triercloudadmin_platform_api, <*> columns={id=UUID, valor_preco_venda=NUMERIC(<NUM>, <NUM>), produto=UUID, empresa=UUID}, fetchSize=<NUM>), <*> foreignTable=desconto_flat, localSchema=triercloudadmin_platform_api, <*> columns={id=UUID, campanha=UUID, valor=NUMERIC(<NUM>, <NUM>), tipo=INT2, empresa=UUID, atributo=UUID, hierarquia=UUID, especialidade=INT2, inicio=TIMESTAMP, fim=TIMESTAMP}, fetchSize=<NUM>), <*> foreignTable=produto, localSchema=triercloudadmin_platform_api, <*> columns={id=UUID, grupo=UUID, subgrupo=UUID, categoria=UUID, fabricante=UUID}, fetchSize=<NUM>), <*> foreignTable=hierarquia_desconto, localSchema=triercloudadmin_platform_api, <*> columns={id=UUID, valor=NUMERIC(<NUM>)}, fetchSize=<NUM>), <*> foreignTable=campanha_container, localSchema=triercloudadmin_platform_api, <*> columns={id=UUID, inicio=TIMESTAMP, fim=TIM"
+    },
+    {
+      "template_id": 195,
+      "fit_count": 991,
+      "wildcards": 8,
+      "distinct_services": [
+        "desktop"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Levou '<NUM>' ms para executar saveSyncEvent para: [getPayloadId(<UUID>): '<NUM>' ms, determineInitialStatus: '<NUM>' ms, desktopSyncService.save(event): '<NUM>' ms, desktopSyncEventHandler.notify(res): '<NUM>' ms]. Requisições nos últimos '<NUM>' segundos: '<NUM>'.",
+        "Levou '<NUM>' ms para executar saveSyncEvent para: [getPayloadId(<UUID>): '<NUM>' ms, determineInitialStatus: '<NUM>' ms, desktopSyncService.save(event): '<NUM>' ms, desktopSyncEventHandler.notify(res): '<NUM>' ms]. Requisições nos últimos '<NUM>' segundos: '<NUM>'.",
+        "Levou '<NUM>' ms para executar saveSyncEvent para: [getPayloadId(<UUID>): '<NUM>' ms, determineInitialStatus: '<NUM>' ms, desktopSyncService.save(event): '<NUM>' ms, desktopSyncEventHandler.notify(res): '<NUM>' ms]. Requisições nos últimos '<NUM>' segundos: '<NUM>'."
+      ],
+      "template": "Levou '<NUM>' ms para executar saveSyncEvent para: [getPayloadId(<UUID>): '<NUM>' ms, determineInitialStatus: '<NUM>' ms, desktopSyncService.save(event): '<NUM>' ms, desktopSyncEventHandler.notify(res): '<NUM>' ms]. Requisições nos últimos '<NUM>' segundos: '<NUM>'."
+    },
+    {
+      "template_id": 210,
+      "fit_count": 972,
+      "wildcards": 2,
+      "distinct_services": [
+        "cliente",
+        "comissao",
+        "edocs",
+        "estoque",
+        "fiscal",
+        "gestao",
+        "pedido",
+        "redepdc",
+        "saga",
+        "setup",
+        "sincronizacao"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Adicionando serviço [cadastro-cliente-backend] ao cache com o canary tn-melhorias-<NUM>",
+        "Adicionando serviço [cadastro-empresa-frontend] ao cache com o canary tn-melhorias-<NUM>",
+        "Adicionando serviço [cadastro-produto-backend] ao cache com o canary pe-<NUM>"
+      ],
+      "template": "Adicionando serviço <*> ao cache com o canary <*>"
+    },
+    {
+      "template_id": 98,
+      "fit_count": 963,
+      "wildcards": 2,
+      "distinct_services": [
+        "setup"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "BUSCANDO SCRIPT PENDENTE DE EXECUÇÃO PARA O TENANT: c2<NUM> E EMPRESAID: <UUID>",
+        "BUSCANDO SCRIPT PENDENTE DE EXECUÇÃO PARA O TENANT: c1<NUM> E EMPRESAID: <UUID>",
+        "BUSCANDO SCRIPT PENDENTE DE EXECUÇÃO PARA O TENANT: c1<NUM> E EMPRESAID: <UUID>"
+      ],
+      "template": "BUSCANDO SCRIPT PENDENTE DE EXECUÇÃO PARA O TENANT: <*> E EMPRESAID: <UUID>"
+    },
+    {
+      "template_id": 87,
+      "fit_count": 940,
+      "wildcards": 16,
+      "distinct_services": [
+        "api",
+        "caixabalcao",
+        "cliente",
+        "comissao",
+        "dashboard",
+        "desktop",
+        "edocs",
+        "empresa",
+        "entrada",
+        "estoque",
+        "fiscal",
+        "gestaofinanceira",
+        "pec",
+        "pedido",
+        "produto",
+        "redepdc",
+        "referenciaprecos",
+        "scheduler",
+        "security",
+        "venda"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Stopwatch: <NUM> ms for ['actions/salvarDocumentoFiscalVenda', tenant: 'drogariasazulsaude2<NUM>', username: 'desktop@drogariasazulsaude2<NUM>', Thread: 'org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#<NUM><NUM>']. --------------------------------------------- ms % Task name --------------------------------------------- <NUM> <NUM>% actions/salvarDocumentoFiscalVenda <NUM> <NUM>% fdw.init <NUM> <NUM>% fdw.initExternalMigrations <NUM> <NUM>% initExternalMigrations",
+        "Stopwatch: <NUM> ms for ['POST/actions/existeProdutoPorCodigoBarrasOuCodigoReduzido', tenant: 'f3<NUM>', username: 'matheus@f3<NUM>', Thread: 'http-nio-<NUM>-exec-<NUM>']. --------------------------------------------- ms % Task name --------------------------------------------- <NUM> <NUM>% POST/actions/existeProdutoPorCodigoBarrasOuCodigoReduzido <NUM> <NUM>% fdw.init <NUM> <NUM>% fdw.initExternalMigrations <NUM> <NUM>% initExternalMigrations",
+        "Stopwatch: <NUM> ms for ['entities/replication/preco/precoUpdated', tenant: 'drogariasazulsaude2<NUM>', username: 'desktop@drogariasazulsaude2<NUM>', Thread: 'org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#<NUM><NUM>']. --------------------------------------------- ms % Task name --------------------------------------------- <NUM> <NUM>% entities/replication/preco/precoUpdated <NUM> <NUM>% fdw.init <NUM> <NUM>% fdw.initExternalMigrations <NUM> <NUM>% initExternalMigrations"
+      ],
+      "template": "Stopwatch: <NUM> ms for <*> tenant: <*> username: <*> Thread: <*> --------------------------------------------- ms % Task name --------------------------------------------- <NUM> <NUM>% <*> <NUM> <NUM>% <*> <NUM> <NUM>% <*> <NUM> <NUM>% initExternalMigrations"
+    },
+    {
+      "template_id": 213,
+      "fit_count": 904,
+      "wildcards": 2,
+      "distinct_services": [
+        "estoque"
+      ],
+      "levels": [
+        "WARN"
+      ],
+      "examples": [
+        "ProdutoId <UUID> encontrado -> true",
+        "ProdutoId <UUID> encontrado -> true",
+        "ProdutoId <UUID> encontrado -> true"
+      ],
+      "template": "ProdutoId <UUID> encontrado -> <*>"
+    },
+    {
+      "template_id": 31,
+      "fit_count": 882,
+      "wildcards": 2,
+      "distinct_services": [
+        "setup"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "[SINCRONIZACAO-CLOUD] - BUSCANDO CONFIGURACAO DE SINCRONIZACAO CODIGO TRIER[<NUM>] VALIDATOR_HASH[7QLHLN]",
+        "[SINCRONIZACAO-CLOUD] - BUSCANDO CONFIGURACAO DE SINCRONIZACAO CODIGO TRIER[<NUM>] VALIDATOR_HASH[1EJ0A0<NUM>]",
+        "[SINCRONIZACAO-CLOUD] - BUSCANDO CONFIGURACAO DE SINCRONIZACAO CODIGO TRIER[<NUM>] VALIDATOR_HASH[<NUM>4KVJK2]"
+      ],
+      "template": "[SINCRONIZACAO-CLOUD] - BUSCANDO CONFIGURACAO DE SINCRONIZACAO CODIGO TRIER[<NUM>] <*>"
+    },
+    {
+      "template_id": 33,
+      "fit_count": 866,
+      "wildcards": 27,
+      "distinct_services": [
+        "venda"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Mensagem recebida na fila do SAGA: (Body:'{}' MessageProperties [headers={X-Tenant-Header=fcia6<NUM>, X-MessageId-Header=<UUID>, X-Hops-Count-Header=<NUM>, X-Tenant-Canary-Header=null, X-TerminalId-Header=<UUID>, X-TraceCallStack-Header=(desktop@fcia6<NUM>):platform-desktop/(ctx-p:null, p:finalizarVendaPdv)>>(desktop@fcia6<NUM>):mercado-venda/actions/finalizarVendaPdv>>(desktop@fcia6<NUM>):mercado-venda/actions/iniciarFinalizacaoOrcamentoVendaPdv>>(desktop@fcia6<NUM>):mercado-venda/saga>>(deskto",
+        "Mensagem recebida na fila do SAGA: (Body:'[B@1e9fe4<NUM>(byte[<NUM>])' MessageProperties [headers={X-Tenant-Header=drogariasazulsaude2<NUM>, X-MessageId-Header=<UUID>, X-Hops-Count-Header=<NUM>, X-Tenant-Canary-Header=null, X-TerminalId-Header=<UUID>, X-TraceCallStack-Header=(desktop@drogariasazulsaude2<NUM>):platform-desktop/(ctx-p:null, p:finalizarVendaPdv)>>(desktop@drogariasazulsaude2<NUM>):mercado-venda/actions/finalizarVendaPdv>>(desktop@drogariasazulsaude2<NUM>):mercado-venda/actions/inic",
+        "Mensagem recebida na fila do SAGA: (Body:'{}' MessageProperties [headers={X-Tenant-Header=fcia6<NUM>, X-MessageId-Header=<UUID>, X-Hops-Count-Header=<NUM>, X-Tenant-Canary-Header=null, X-TerminalId-Header=<UUID>, X-TraceCallStack-Header=(desktop@fcia6<NUM>):platform-desktop/(ctx-p:null, p:finalizarVendaPdv)>>(desktop@fcia6<NUM>):mercado-venda/actions/finalizarVendaPdv>>(desktop@fcia6<NUM>):mercado-venda/actions/iniciarFinalizacaoOrcamentoVendaPdv>>(desktop@fcia6<NUM>):mercado-venda/saga>>(deskto"
+      ],
+      "template": "Mensagem recebida na fila do SAGA: <*> MessageProperties <*> X-MessageId-Header=<UUID>, X-Hops-Count-Header=<NUM>, <*> X-TerminalId-Header=<UUID>, <*> <*> X-Abrangencia-Empresa-Enabled-Header=true, X-Access-Token=null, X-User-Impersonate-Header=null, <*> X-Destination-Domain-Header=mercado, <*> X-TraceId-Header=<UUID>, <*> <*> <*> X-Event-Description-Header=null, X-EmpresasSelecionadasIds-Header=<UUID>, X-Client-Id-Header=triercloud-web, X-Event-Token-Header=null, X-Trusted-Header=true, <*> X-ZoneId-Header=UTC, <*> X-User-Empresas-Header=null, X-Destination-Service-Header=venda, <*> correlationId=<UUID>@<NUM>, contentType=application/json, contentEncoding=UTF-<NUM>, contentLength=<NUM>, receivedDeliveryMode=PERSISTENT, priority=<NUM>, redelivered=false, receivedExchange=trier.cloud.domains.exchange.topic, <*> deliveryTag=<NUM>, consumerTag=trier-cloud-mercado-venda-<UUID>, <*>"
+    }
+  ],
+  "high_wildcard_candidates": [
+    {
+      "template_id": 1165,
+      "fit_count": 1,
+      "wildcards": 24212,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_<NUM>9d2<NUM>9a7c4b7<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>,"
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_<NUM>9d2<NUM>9a7c4b7<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <N"
+    },
+    {
+      "template_id": 1541,
+      "fit_count": 1,
+      "wildcards": 20969,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_<NUM>2f4caa1d79d5b6<NUM>0a>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>"
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_<NUM>2f4caa1d79d5b6<NUM>0a>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <"
+    },
+    {
+      "template_id": 565,
+      "fit_count": 1,
+      "wildcards": 19375,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_<NUM>6c9dd35c50c7f7<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, "
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_<NUM>6c9dd35c50c7f7<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NU"
+    },
+    {
+      "template_id": 1281,
+      "fit_count": 1,
+      "wildcards": 19317,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_4b4<NUM>6b94dee2<NUM>7a9>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, "
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_4b4<NUM>6b94dee2<NUM>7a9>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NU"
+    },
+    {
+      "template_id": 1549,
+      "fit_count": 1,
+      "wildcards": 18940,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_<NUM>0ffc8b5aeed4eb5bfd>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <"
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_<NUM>0ffc8b5aeed4eb5bfd>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM"
+    },
+    {
+      "template_id": 1113,
+      "fit_count": 1,
+      "wildcards": 18921,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_6cdd0b2b8<NUM>2c62be5<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>"
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_6cdd0b2b8<NUM>2c62be5<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <"
+    },
+    {
+      "template_id": 1164,
+      "fit_count": 1,
+      "wildcards": 18406,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_cdb86b12e3c77fa7f5<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <"
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_cdb86b12e3c77fa7f5<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM"
+    },
+    {
+      "template_id": 1218,
+      "fit_count": 1,
+      "wildcards": 18351,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_e8a04ee16be2eb0<NUM>1a7<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NU"
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_e8a04ee16be2eb0<NUM>1a7<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>,"
+    },
+    {
+      "template_id": 1220,
+      "fit_count": 1,
+      "wildcards": 18348,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_<NUM>2f5<NUM>8eb5<NUM>4f6<NUM>2b>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>,"
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_<NUM>2f5<NUM>8eb5<NUM>4f6<NUM>2b>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <N"
+    },
+    {
+      "template_id": 1450,
+      "fit_count": 1,
+      "wildcards": 18162,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_f3aac7<NUM>3d7<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>"
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_f3aac7<NUM>3d7<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <"
+    },
+    {
+      "template_id": 1117,
+      "fit_count": 1,
+      "wildcards": 18150,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_<NUM>6ca7<NUM>4e1bd93c7<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NU"
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_<NUM>6ca7<NUM>4e1bd93c7<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>,"
+    },
+    {
+      "template_id": 1064,
+      "fit_count": 1,
+      "wildcards": 17861,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_d0<NUM>5a7b9<NUM>1ef8e>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <N"
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_d0<NUM>5a7b9<NUM>1ef8e>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>"
+    },
+    {
+      "template_id": 1492,
+      "fit_count": 1,
+      "wildcards": 17231,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_<NUM>4bb89f40b7a7a37a1<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM"
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_<NUM>4bb89f40b7a7a37a1<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, "
+    },
+    {
+      "template_id": 1062,
+      "fit_count": 1,
+      "wildcards": 17224,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_<NUM>5e13bc6<NUM>9f1<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>,"
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_<NUM>5e13bc6<NUM>9f1<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <N"
+    },
+    {
+      "template_id": 1247,
+      "fit_count": 1,
+      "wildcards": 16916,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_0c5<NUM>9b2fd8<NUM>6de0<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NU"
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_0c5<NUM>9b2fd8<NUM>6de0<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>,"
+    },
+    {
+      "template_id": 501,
+      "fit_count": 1,
+      "wildcards": 16914,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_b7<NUM>4c4a2<NUM>3dec0da>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, "
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_b7<NUM>4c4a2<NUM>3dec0da>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NU"
+    },
+    {
+      "template_id": 1276,
+      "fit_count": 1,
+      "wildcards": 16853,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_8c9<NUM>4b2<NUM>0e60d2>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <N"
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_8c9<NUM>4b2<NUM>0e60d2>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>"
+    },
+    {
+      "template_id": 1550,
+      "fit_count": 1,
+      "wildcards": 16730,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_d4da59aad3deb3ae4<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <N"
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_d4da59aad3deb3ae4<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>"
+    },
+    {
+      "template_id": 1380,
+      "fit_count": 1,
+      "wildcards": 16720,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_<NUM>7bc9<NUM>3e6cb1eabf2b6<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>,"
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_<NUM>7bc9<NUM>3e6cb1eabf2b6<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <N"
+    },
+    {
+      "template_id": 1480,
+      "fit_count": 1,
+      "wildcards": 16639,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_e71a6<NUM>8edd6b9a5c9<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>"
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_e71a6<NUM>8edd6b9a5c9<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <"
+    },
+    {
+      "template_id": 957,
+      "fit_count": 1,
+      "wildcards": 16549,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_<NUM>4e3ec3<NUM>8f58d2ee85c5>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NU"
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_<NUM>4e3ec3<NUM>8f58d2ee85c5>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>,"
+    },
+    {
+      "template_id": 1116,
+      "fit_count": 1,
+      "wildcards": 16539,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_e7<NUM>8a2<NUM>4aca0f9e>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <"
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_e7<NUM>8a2<NUM>4aca0f9e>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM"
+    },
+    {
+      "template_id": 1191,
+      "fit_count": 1,
+      "wildcards": 16338,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_f8<NUM>7fd4<NUM>2cc1f5<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM"
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_f8<NUM>7fd4<NUM>2cc1f5<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, "
+    },
+    {
+      "template_id": 1354,
+      "fit_count": 1,
+      "wildcards": 16092,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_<NUM>5b7<NUM>2ee3<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <N"
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_<NUM>5b7<NUM>2ee3<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>"
+    },
+    {
+      "template_id": 996,
+      "fit_count": 1,
+      "wildcards": 15598,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_<NUM>9f6<NUM>4f4d4<NUM>0a4abe6a7>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>,"
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_<NUM>9f6<NUM>4f4d4<NUM>0a4abe6a7>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <N"
+    },
+    {
+      "template_id": 1027,
+      "fit_count": 1,
+      "wildcards": 15579,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_5dc5b5<NUM>9b4c4<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NU"
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_5dc5b5<NUM>9b4c4<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>,"
+    },
+    {
+      "template_id": 1567,
+      "fit_count": 1,
+      "wildcards": 15558,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_4f7<NUM>2d2e0<NUM>6cf6e30f3<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>,"
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_4f7<NUM>2d2e0<NUM>6cf6e30f3<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <N"
+    },
+    {
+      "template_id": 1518,
+      "fit_count": 1,
+      "wildcards": 15553,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_acbf7a7f1<NUM>4be7<NUM>4c0a>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM"
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_acbf7a7f1<NUM>4be7<NUM>4c0a>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, "
+    },
+    {
+      "template_id": 1073,
+      "fit_count": 1,
+      "wildcards": 15538,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_<NUM>7abdea8<NUM>1e3<NUM>2f79de>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, "
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_<NUM>7abdea8<NUM>1e3<NUM>2f79de>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NU"
+    },
+    {
+      "template_id": 1147,
+      "fit_count": 1,
+      "wildcards": 15535,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_<NUM>2b3<NUM>8ffbb>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>,"
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_<NUM>2b3<NUM>8ffbb>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <N"
+    },
+    {
+      "template_id": 1390,
+      "fit_count": 1,
+      "wildcards": 15483,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_<NUM>6f63e0ba92ef4<NUM>9a>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>,"
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_<NUM>6f63e0ba92ef4<NUM>9a>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <N"
+    },
+    {
+      "template_id": 1118,
+      "fit_count": 1,
+      "wildcards": 15455,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_f32d6ed0<NUM>1fcbfc67a4a>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, "
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_f32d6ed0<NUM>1fcbfc67a4a>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NU"
+    },
+    {
+      "template_id": 902,
+      "fit_count": 1,
+      "wildcards": 15429,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_ca0<NUM>1df5<NUM>0f8<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>,"
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_ca0<NUM>1df5<NUM>0f8<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <N"
+    },
+    {
+      "template_id": 1003,
+      "fit_count": 1,
+      "wildcards": 15350,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_ca1<NUM>8c3e64fd5f4<NUM>8e>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>"
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_ca1<NUM>8c3e64fd5f4<NUM>8e>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <"
+    },
+    {
+      "template_id": 1512,
+      "fit_count": 1,
+      "wildcards": 15280,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_<NUM>6e7<NUM>5e32dc0f1a9<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <N"
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_<NUM>6e7<NUM>5e32dc0f1a9<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>"
+    },
+    {
+      "template_id": 238,
+      "fit_count": 1,
+      "wildcards": 15172,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_<NUM>2c2c6d9f2<NUM>1d0<NUM>5cc1d>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>,"
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_<NUM>2c2c6d9f2<NUM>1d0<NUM>5cc1d>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <N"
+    },
+    {
+      "template_id": 1400,
+      "fit_count": 1,
+      "wildcards": 15161,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_<NUM>4e2<NUM>9dd36cab5<NUM>4d3<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NU"
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_<NUM>4e2<NUM>9dd36cab5<NUM>4d3<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>,"
+    },
+    {
+      "template_id": 1429,
+      "fit_count": 1,
+      "wildcards": 15132,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_e61fa2<NUM>5b5<NUM>1a2b5>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, "
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_e61fa2<NUM>5b5<NUM>1a2b5>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NU"
+    },
+    {
+      "template_id": 1265,
+      "fit_count": 1,
+      "wildcards": 15127,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_<NUM>3c8<NUM>8d9c8<NUM>6fc9<NUM>5e>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM"
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_<NUM>3c8<NUM>8d9c8<NUM>6fc9<NUM>5e>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, "
+    },
+    {
+      "template_id": 1126,
+      "fit_count": 1,
+      "wildcards": 15056,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_a6df5<NUM>1b3c4dd4c3b67f>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, "
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_a6df5<NUM>1b3c4dd4c3b67f>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NU"
+    },
+    {
+      "template_id": 226,
+      "fit_count": 1,
+      "wildcards": 14920,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_<NUM>6fa4<NUM>8d4d9<NUM>6f1d>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NU"
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_<NUM>6fa4<NUM>8d4d9<NUM>6f1d>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>,"
+    },
+    {
+      "template_id": 542,
+      "fit_count": 1,
+      "wildcards": 14554,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_9bcabc72f2f72e6<NUM>5f3>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <"
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_9bcabc72f2f72e6<NUM>5f3>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM"
+    },
+    {
+      "template_id": 1384,
+      "fit_count": 1,
+      "wildcards": 14505,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_a0b5<NUM>4ef1db2<NUM>7a0<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <N"
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_a0b5<NUM>4ef1db2<NUM>7a0<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>"
+    },
+    {
+      "template_id": 1076,
+      "fit_count": 1,
+      "wildcards": 14382,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_<NUM>6ba3<NUM>8d0c5ccfb0<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <N"
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_<NUM>6ba3<NUM>8d0c5ccfb0<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>"
+    },
+    {
+      "template_id": 1502,
+      "fit_count": 1,
+      "wildcards": 14286,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_6c7ca8<NUM>3dbd4>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <"
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_6c7ca8<NUM>3dbd4>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM"
+    },
+    {
+      "template_id": 1071,
+      "fit_count": 1,
+      "wildcards": 14214,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_de9<NUM>6d1<NUM>6d73e88d3<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <"
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_de9<NUM>6d1<NUM>6d73e88d3<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM"
+    },
+    {
+      "template_id": 1353,
+      "fit_count": 1,
+      "wildcards": 14204,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_<NUM>6fe2<NUM>6dcd7d5f1<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NU"
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_<NUM>6fe2<NUM>6dcd7d5f1<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>,"
+    },
+    {
+      "template_id": 1074,
+      "fit_count": 1,
+      "wildcards": 14191,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_cb20b5<NUM>2f8<NUM>3b6b>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <"
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_cb20b5<NUM>2f8<NUM>3b6b>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM"
+    },
+    {
+      "template_id": 1242,
+      "fit_count": 1,
+      "wildcards": 14175,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_<NUM>3f8fefc8<NUM>1d5<NUM>0d>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NU"
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_<NUM>3f8fefc8<NUM>1d5<NUM>0d>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>,"
+    },
+    {
+      "template_id": 1250,
+      "fit_count": 1,
+      "wildcards": 14055,
+      "distinct_services": [
+        "edocs"
+      ],
+      "levels": [
+        "INFO"
+      ],
+      "examples": [
+        "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_6d6b2f7<NUM>2b3<NUM>5f7c2d4<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>,"
+      ],
+      "template": "Documento Fiscal id: '<UUID>', serieNota: '<NUM>', numeroNota: '<NUM>', urlXmlRetorno '<URL>, gravado com sucesso como o payload: VendaDocumentoFiscalDto(id=<UUID>, serieNota=<NUM>, numeroNota=<NUM>, numeroControle=<NUM>, sequencialEnvio=<NUM>, chaveNota=<HEX_6d6b2f7<NUM>2b3<NUM>5f7c2d4<NUM>>, success=true, codigoErro=null, mensagemErro=AUTORIZADO O USO DA NF-E, pendenteCancelamento=false, xmlEnvio=[<NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <NUM>, <N"
+    }
+  ]
+}

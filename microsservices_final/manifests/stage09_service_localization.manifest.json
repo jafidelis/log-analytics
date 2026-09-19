@@ -1,0 +1,38 @@
+{
+  "stage": 9,
+  "stage_name": "localize_candidate_services",
+  "generated_at": "2026-09-16T01:10:37.999316+00:00",
+  "inputs": {
+    "alerts": {
+      "path": "data/processed/microservices_final/microservices_alerts.csv.gz",
+      "sha256": "12f8ed5bdca2d594a0dee7abea964a1d49ba8e4b1433f036e440391be9f05dc9"
+    },
+    "assignments": {
+      "path": "data/processed/microservices_final/microservices_events_drain3_assignments.csv.gz",
+      "sha256": "1d42145d47a62a692d74909ca4522174fe8d04bce9b864184380d1492e945cdc"
+    }
+  },
+  "policy": {
+    "candidate_unit": "tc_service",
+    "ranking": "error_count desc, unique_templates desc, events desc, first_event_ordinal asc",
+    "interpretation": "candidate_service_with_evidence_not_proof"
+  },
+  "results": {
+    "events_scanned": 11199871,
+    "traces_alerted": 26977,
+    "traces_with_candidates": 26977,
+    "top1_candidates": 26977,
+    "top3_candidates": 63691,
+    "candidate_rows": 183410
+  },
+  "output": {
+    "path": "data/processed/microservices_final/microservices_service_candidates.csv",
+    "sha256": "e7b93b919d21f50d8681a308b2a24c5d26cfbbe48342efb44248217973cde6e7"
+  },
+  "checks": {
+    "alerted_traces_nonzero": true,
+    "candidates_nonzero": true,
+    "output_hash_recorded": true
+  },
+  "accepted": true
+}
